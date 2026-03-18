@@ -1,0 +1,25 @@
+{
+    "theme_color": "#2596be",
+    "background_color": "#ffffff",
+    "id": "http://54.226.182.196:3000/",
+    "start_url": "http://54.226.182.196:3000/",
+    "name": "Cosmos Manager",
+    "short_name": "Cosmos Manager",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+        "src": "http://54.226.182.196:3000/icon144.png",
+        "sizes": "144x144",
+        "type": "image/png",
+        "purpose": "any maskable"
+        },
+        {
+        "src": "http://54.226.182.196:3000/icon512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "any maskable"
+        }
+    ],
+    "display": "fullscreen",
+    "orientation": "landscape"
+  }
