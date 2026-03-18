@@ -11,8 +11,8 @@ const manifestForPlugin = {
 
 export default defineConfig({
   plugins: [react(), VitePWA(manifestForPlugin)],
-  base: "/cosmos-manager/",
+  base: "/",
   server: {
-    port: 3001,
+    port: 3000,
   }
 })
