@@ -1,0 +1,79 @@
+.campanha-personagens-container {
+    width: 90%;
+    height: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.campanha-personagens-container .personagens-menu {
+    width: 95%;
+    height: 98%;
+    border: solid 3px var(--dark-purple);
+    background-color: var(--purple-transparent);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.campanha-personagens-container .personagens-menu .personagens-header {
+    width: 100%;
+    height: 5%;
+    background-color: var(--dark-purple);
+    color: var(--white);
+    text-shadow: var(--borda-texto);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.campanha-personagens-container .personagens-menu .personagens-header h1 {
+    font-size: 2rem;
+    margin: 0;
+    text-align: center;
+}
+
+.campanha-personagens-container .personagens-menu .personagens-section {
+    margin: 10px 0;
+    height: 85%;
+    width: 90%;
+    background-color: var(--black-transparent);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 2%;
+}
+
+.campanha-personagens-container .personagens-menu .botao-adicionar-container {
+    margin-top: 10px;
+    width: 90%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.campanha-personagens-container .personagens-menu .botao-adicionar-container .botao-primario {
+    border-radius: 0;
+    border: solid 2px var(--dark-blue);
+    background-color: var(--blue);
+    padding: 0.5rem;
+    font-size: 1.25rem;
+    font-family: textFont, sans-serif
+}
+
+.campanha-personagens-container .personagens-menu .botao-adicionar-container .botao-primario:hover {
+    background-color: var(--dark-blue);
+}
+
+.campanha-personagens-container .card-personagem-container .card-personagem {
+    border-color: var(--dark-purple);
+}
+
+
+@media screen and (min-height: 480px) and (max-height: 900px) {
+    .campanha-personagens-container .personagens-menu .personagens-header h1 {
+        font-size: 1.5rem;
+    }
+}

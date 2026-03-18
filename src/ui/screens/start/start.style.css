@@ -1,0 +1,129 @@
+.start-aviso {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--black);
+  background-image: url(../../../assets/img/backgrounds/NEBULOSA.gif);
+  background-size: 105%;
+  animation: leftToRight 30s alternate-reverse infinite ease-in-out;
+}
+
+.start-aviso p {
+  background-color: var(--white);
+  padding: 2rem 1rem;
+  font-size: 2rem;
+  width: 40%;
+  border: double 5px;
+  text-align: center;
+}
+
+.start-aviso p span {
+  font-weight: 900;
+  margin-right: 10px;
+}
+
+.start-aviso button {
+  background-color: var(--light-grey);
+  border: double 5px var(--black);
+  padding: 0.3rem 2rem;
+  font-size: 2.7rem;
+  font-family: titleFont, sans-serif;
+  transition: all 0.1s;
+}
+
+.start-aviso button:hover {
+  transition: all 0.1s;
+  background-color: var(--light-blue);
+}
+
+.start-screen {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: 105%;
+  background-color: var(--black);
+  background-image: url(../../../assets/img/backgrounds/START.gif);
+  animation: fade-in 8s, leftToRight 30s alternate-reverse infinite ease-in-out;
+}
+
+.start-screen img {
+  position: absolute;
+  top: 3rem;
+  height: 40%;
+  filter: drop-shadow(-2px 2px 20px var(--black));
+}
+
+.start-screen div {
+  position: absolute;
+  bottom: 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+.start-screen div button {
+  margin: 0.3rem 0;
+  background-color: var(--light-grey);
+  border: double 5px var(--black);
+  padding: 0.3rem 2rem;
+  font-size: 2.5rem;
+  font-family: titleFont, sans-serif;
+  color: var(--white);
+  text-shadow: var(--borda-texto);
+  transition: all 0.1s;
+}
+
+.start-screen div button:hover {
+  transition: all 0.1s;
+  background-color: var(--light-blue);
+}
+
+.start-screen div label {
+  margin: 0.3rem 0;
+  background-color: var(--light-grey);
+  border: double 5px var(--black);
+  padding: 0.3rem 2rem;
+  font-size: 1.75rem;
+  font-family: titleFont, sans-serif;
+  color: var(--white);
+  text-shadow: var(--borda-texto);
+  transition: all 0.1s;
+}
+
+.start-screen div label:hover {
+  transition: all 0.1s;
+  background-color: var(--light-blue);
+}
+
+.start-screen div input {
+  width: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+}
+
+@media screen and (max-height: 479px) {
+  .start-aviso p {
+    font-size: 1.75rem;
+    margin: 5px;
+  }
+
+  .start-screen {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .start-screen img {
+    position: static;
+    height: 60%;
+    margin-bottom: 5%;
+  }
+  .start-screen div {
+    position: static;
+  }
+}

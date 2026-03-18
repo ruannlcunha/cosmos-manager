@@ -1,0 +1,81 @@
+div .header {
+  width: 100%;
+  height: 13%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--mid-black);
+}
+
+div .header .header-top {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  justify-content: center;
+}
+
+div .header .header-top .header-logo {
+  position: absolute;
+  height: 10vh;
+  left: 1rem;
+  transition: all 0.1s;
+  z-index: 999;
+}
+
+div .header .header-top img {
+  height: 95%;
+  transition: all 0.1s;
+}
+
+div .header .header-top img:hover {
+  transition: all 0.1s;
+  filter: drop-shadow(-2px 2px 5px var(--black-transparent));
+  cursor: pointer;
+}
+
+div .header .header-top ul {
+  margin: 0;
+  width: 50%;
+  height: 140%;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+div .header .header-top .header-config {
+  position: absolute;
+  height: 8vh;
+  top: 10px;
+  right: 1rem;
+  transition: all 0.1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  border: none;
+  background: none;
+}
+
+div .header .header-top .header-config:hover {
+  filter: drop-shadow(-2px 2px 5px var(--white-transparent));
+}
+
+div .header .header-top .header-config img {
+  height: 100%;
+}
+
+div .header .header-bottom {
+  width: 100%;
+  height: 25%;
+  background-color: var(--purple);
+  border-top: 2px solid var(--light-purple);;
+  filter: drop-shadow(0px -1px 5px var(--light-purple));
+}
+
+@media screen and (max-height: 479px) {
+  div .header {
+    height: 15%;
+  }
+}

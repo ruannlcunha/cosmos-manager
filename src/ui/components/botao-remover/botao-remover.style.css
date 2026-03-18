@@ -1,0 +1,60 @@
+
+div div div .modal .confirm-modal {
+    width: 50%;
+    border: solid 5px var(--dark-blue);
+    background-color: var(--blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div div div .modal .confirm-modal header {
+    width: 100%;
+    background-color: var(--dark-blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+div div div .modal .confirm-modal h2 {
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+div div div .modal .confirm-modal footer {
+    width: 100%;
+    height: auto;
+    background-color: var(--dark-blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+div div .remover-button {
+    border: solid 2px var(--blue);
+    background-color: var(--black-transparent);
+    cursor: var(--cursor-pointer);
+    height: 85%;
+    margin: 0 10px;
+    transition: all 0.1s;
+}
+
+div div .remover-button:hover {
+    transition: all 0.1s;
+    border-color: var(--dark-red);
+    background-color: var(--red-transparent);
+}
+
+div div .remover-button img {
+    transition: all 0.1s;
+    height: 100%;
+    width: auto;
+}
+
+div div .remover-button img {
+    transition: all 0.1s;
+    height: 100%;
+    width: auto;
+}

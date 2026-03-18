@@ -1,0 +1,23 @@
+
+.stream-cena-screen {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../../../assets/img/backgrounds/UNIVERSO_OFFLINE.png);
+    background-size: 105%;
+    animation: leftToRight 45s infinite alternate;
+}
+
+.stream-cena-screen .cena-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: solid 2px var(--black);
+}
+
+.cena-desativada-icon {
+    height: 25vh;
+    opacity: 25%;
+}

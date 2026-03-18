@@ -1,0 +1,460 @@
+
+.baralho-screen {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../../../assets/img/backgrounds/MESA_MADEIRA.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.baralho-screen .cartas-section {
+    height: 80%;
+    width: 95%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.baralho-screen .cartas-section div header {
+    width: 100%;
+    height: 10%;
+    background-color: var(--purple);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid 3px var(--dark-purple);
+}
+
+.baralho-screen .cartas-section .mao-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.baralho-screen .cartas-section .mao-container header {
+    height: 7%;
+}
+
+.baralho-screen .cartas-section div section {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.baralho-screen .cartas-section div section .cartas-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    position: relative;
+}
+
+.baralho-screen .cartas-section div section .cartas-container .carta {
+    position: absolute;
+    background: none;
+    bottom: 0;
+    transition: all 0.1s;
+}
+
+.baralho-screen .cartas-section div section .cartas-container .carta.ultima:hover {
+    transition: all 0.1s;
+    cursor: var(--cursor-pointer);
+    transform: translateY(-25px);
+    filter: drop-shadow(0 10px 2px var(--dark-black-transparent));
+}
+
+.baralho-screen .cartas-section div section .cartas-container .carta img {
+    height: 30vh;
+}
+
+.baralho-screen .cartas-section .mao-container section {
+    width: 75%;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.baralho-screen .cartas-section .mao-container section .carta {
+    background: none;
+    bottom: 0;
+    transition: all 0.1s;
+}
+
+.baralho-screen .cartas-section .mao-container section .carta:hover {
+    transition: all 0.1s;
+    cursor: var(--cursor-pointer);
+    transform: translateY(-25px);
+    filter: drop-shadow(0 10px 2px var(--dark-black-transparent));
+}
+
+.baralho-screen .cartas-section .mao-container section .carta img {
+    height: 30vh;
+}
+
+.baralho-screen .cartas-section div header h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin: 0;
+    color: var(--white);
+    text-shadow: var(--borda-texto);
+}
+
+.baralho-screen .cartas-section div {
+    background-color: var(--black-transparent);
+}
+
+.baralho-screen .cartas-section .baralho-container {
+    height: 60%;
+    width: 20%;
+    border: solid 3px var(--dark-purple);
+}
+
+.baralho-screen .cartas-section .mao-container {
+    height: 90%;
+    width: 50%;
+    border: solid 3px var(--dark-purple);
+}
+
+.baralho-screen .cartas-section .descarte-container {
+    height: 60%;
+    width: 20%;
+    border: solid 3px var(--dark-purple);
+}
+
+.baralho-screen .baralho-botoes {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.baralho-screen .baralho-botoes .botao-primario {
+    font-size: 2.5rem;
+    width: 30%;
+}
+
+.modal .carta-modal {
+    width: 20%;
+    border: solid 3px var(--dark-purple);
+    background-color: var(--dark-black-transparent);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.modal .carta-modal.baralho {
+    position: absolute;
+    top: 20%;
+    left: 2%;
+}
+
+.modal .carta-modal.descarte {
+    position: absolute;
+    top: 20%;
+    right: 2%;
+}
+
+.modal .carta-modal header {
+    width: 100%;
+    background-color: var(--purple);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 3px var(--dark-purple);
+}
+
+.modal .carta-modal header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--white);
+    text-shadow: var(--borda-texto);
+}
+
+.modal .carta-modal .botao-primario {
+    margin: 10px;
+}
+
+.modal .carta-modal img {
+    height: 30vh;
+}
+
+.modal .descarte-modal {
+    width: 75%;
+    height: 95%;
+    border: solid 3px var(--dark-purple);
+    background-color: var(--dark-black-transparent);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.modal .descarte-modal header {
+    width: 100%;
+    height: 8%;
+    background-color: var(--purple);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 3px var(--dark-purple);
+}
+
+.modal .descarte-modal header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--white);
+    text-shadow: var(--borda-texto);
+}
+
+.modal .descarte-modal section {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    overflow-y: auto;
+}
+
+.modal .descarte-modal section .carta-container {
+    margin: 10px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px var(--dark-purple);
+    background-color: var(--purple);
+    padding-bottom: 5px;
+}
+
+.modal .descarte-modal section .carta-container img {
+    height: 30vh;
+}
+
+.modal .habilidades-modal {
+    width: 40%;
+    height: 95%;
+    border: solid 3px var(--dark-purple);
+    background-color: var(--dark-black-transparent);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.modal .habilidades-modal header {
+    width: 100%;
+    height: 8%;
+    background-color: var(--purple);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 3px var(--dark-purple);
+}
+
+.modal .habilidades-modal header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--white);
+    text-shadow: var(--borda-texto);
+}
+
+.modal .habilidades-modal section {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    overflow-y: auto;
+}
+
+.modal .habilidades-modal section .habilidade-card {
+    width: 100%;
+    border: solid 2px var(--dark-purple);
+    border-collapse: collapse;
+}
+
+.modal .habilidades-modal section .habilidade-card tbody {
+    width: 100%;
+}
+
+.modal .habilidades-modal section .habilidade-card tbody tr{
+    width: 100%;
+}
+
+.modal .habilidades-modal section .habilidade-card tbody tr th {
+    width: 100%;
+    border: solid 2px var(--dark-purple);
+    background-color: var(--purple);
+    text-align: left;
+    color: var(--light-grey);
+    text-shadow: var(--borda-texto);
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding-left: 5px;
+}
+
+.modal .habilidades-modal section .habilidade-card tbody tr .habilidade-nome {
+    background-color: var(--dark-purple);
+    color: var(--white);
+    font-size: 2rem;
+}
+
+.modal .habilidades-modal section .habilidade-card tbody tr td {
+    width: 100%;
+    border: solid 2px var(--dark-purple);
+    text-align: left;
+    color: var(--white);
+    font-weight: 500;
+    font-size: 1.25rem;
+    padding-left: 5px;
+    padding-bottom: 5%;
+}
+
+.modal .trocar-baralho-modal {
+    width: 75%;
+    height: 95%;
+    border: solid 3px var(--dark-purple);
+    background-color: var(--dark-black-transparent);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal .trocar-baralho-modal header {
+    width: 100%;
+    height: 8%;
+    background-color: var(--purple);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 3px var(--dark-purple);
+}
+
+.modal .trocar-baralho-modal header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--white);
+    text-shadow: var(--borda-texto);
+}
+
+.modal .trocar-baralho-modal section {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.modal .trocar-baralho-modal section h2 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--white);
+    text-shadow: var(--borda-texto);
+}
+
+.modal .trocar-baralho-modal section .conjuntos-list {
+    height: 75%;
+    width: 90%;
+    background-color: var(--purple-transparent);
+    border: solid 2px var(--dark-purple);
+}
+
+.modal .trocar-baralho-modal section .conjuntos-list ul {
+    margin: 0;
+    padding: 0;
+    height: 90%;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    overflow-y: auto;
+}
+
+.modal .trocar-baralho-modal section .conjunto-container {
+    margin: 10px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px var(--dark-purple);
+    background-color: var(--purple);
+    padding-bottom: 5px;
+}
+
+.modal .trocar-baralho-modal section .conjunto-container.selecionado {
+    background-color: var(--pacific-blue);
+}
+
+.modal .trocar-baralho-modal section .conjunto-container .botao-primario {
+    font-size: 1.75rem;
+}
+
+.modal .trocar-baralho-modal section .conjunto-container img {
+    height: 30vh;
+}
+
+.modal .trocar-baralho-modal footer {
+    height: 12%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--dark-purple);
+}
+
+.modal .trocar-baralho-modal footer button {
+    font-size: 3rem;
+}
+
+
+@media screen and (min-height: 480px) and (max-height: 900px) {
+    .baralho-screen .cartas-section div header {
+        height: 10%;
+    }
+    .baralho-screen .cartas-section div header h1 {
+        font-size: 2rem;
+    }
+    .baralho-screen .cartas-section .baralho-container {
+        height: 65%;
+    }
+    .baralho-screen .cartas-section .descarte-container {
+        height: 65%;
+    }
+    .modal .carta-modal header h1 {
+        font-size: 1.75rem;
+        text-align: center;
+    }
+    .modal .carta-modal .botao-primario {
+        font-size: 1.5rem;
+    }
+    .modal .trocar-baralho-modal header h1 {
+        font-size: 2rem;
+    }
+    .modal .trocar-baralho-modal section .conjunto-container .botao-primario {
+        font-size: 1.5rem;
+    }
+    .modal .trocar-baralho-modal footer button {
+        font-size: 2rem;
+    }
+    .modal .trocar-baralho-modal section h2 {
+        font-size: 2rem;
+    }
+    .baralho-screen .baralho-botoes .botao-primario {
+        font-size: 2rem;
+    }
+}

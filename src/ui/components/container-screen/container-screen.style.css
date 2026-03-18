@@ -1,0 +1,29 @@
+.container-screen {
+  width: 100vw;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.portrait-screen {
+  position: fixed;
+  width: 100vw;
+  height: 100dvh;
+  opacity: 100%;
+  background-size: cover;
+  background-image: url(../../../assets/img/backgrounds/CLOUDS.png);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.portrait-screen h1 {
+  width: 75%;
+  text-align: center;
+}
+.portrait-screen img {
+  height: 25%;
+}

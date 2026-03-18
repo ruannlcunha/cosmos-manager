@@ -1,0 +1,302 @@
+
+.ficha-container .visuais-modal {
+    width: 75%;
+    height: 95%;
+    border: solid 5px var(--dark-blue);
+    background-color: var(--black-transparent);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ficha-container .visuais-modal .visuais-header {
+    width: 100%;
+    height: 8%;
+    background-color: var(--dark-blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ficha-container .visuais-modal .visuais-header h1 {
+    font-size: 3rem;
+    margin: 5px;
+}
+
+.ficha-container .visuais-modal section {
+    height: 82%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ficha-container .visuais-modal section .lista-visuais {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ficha-container .visuais-modal section .lista-visuais ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 95%;
+    height: 95%;
+    border: solid 5px var(--dark-blue);
+    background-color: var(--blue-transparent);
+}
+
+
+.ficha-container .visuais-modal section .lista-visuais ul li {
+    width: 100%;
+    height: 15%;
+    border-bottom: solid 5px var(--dark-blue);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: all 0.1s;
+}
+
+.ficha-container .visuais-modal section .lista-visuais ul li:hover {
+    transition: all 0.1s;
+    cursor: var(--cursor-pointer);
+}
+
+.ficha-container .visuais-modal section .lista-visuais ul li .visual-esquerda {
+    width: 20%;
+    height: 100%;
+    background-color: var(--blue);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.1s;
+}
+
+.ficha-container .visuais-modal section .lista-visuais ul li:hover .visual-esquerda {
+    transition: all 0.1s;
+    background-color: var(--light-blue);
+}
+
+.ficha-container .visuais-modal section .lista-visuais ul .visual-escolhido .visual-esquerda {
+    background-color: var(--pacific-blue);
+}
+
+.ficha-container .visuais-modal section .lista-visuais ul li .visual-esquerda .imagem-container {
+    height: 9vh;
+    width: 9vh;
+    border: solid 2px var(--dark-blue);
+    background-color: var(--black-transparent);
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ficha-container .visuais-modal section .lista-visuais ul li .visual-esquerda .imagem-container img {
+    height: auto;
+    width: auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.ficha-container .visuais-modal section .lista-visuais ul li .visual-direita {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ficha-container .visuais-modal section .lista-visuais ul li .visual-direita header {
+    width: 100%;
+    height: 50%;
+    background-color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.1s;
+}
+
+.ficha-container .visuais-modal section .lista-visuais ul li:hover .visual-direita header {
+    transition: all 0.1s;
+    background-color: var(--light-blue);
+}
+
+.ficha-container .visuais-modal section .lista-visuais ul .visual-escolhido .visual-direita header {
+    background-color: var(--pacific-blue);
+}
+
+.ficha-container .visuais-modal section .lista-visuais ul li .visual-direita header h3 {
+    padding-left: 5px;
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    max-width: 90%;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.ficha-container .visuais-modal section .lista-visuais ul li .visual-direita header button {
+    width: auto;
+    height: auto;
+    border: solid 2px var(--dark-blue);
+    background-color: var(--blue);
+    padding: 0;
+    transition: all 0.1s;
+    margin: 0 10px;
+}
+
+.ficha-container .visuais-modal section .lista-visuais ul li .visual-direita header button:hover {
+    transition: all 0.1s;
+    border-color: var(--yellow);
+    background-color: var(--light-yellow);
+}
+
+.ficha-container .visuais-modal section .lista-visuais ul li .visual-direita header button .cadeado {
+    height: 2.5vh;
+    width: auto;
+}
+
+.ficha-container .visuais-modal section .lista-visuais ul li .visual-direita header h3 span {
+    color: var(--green);
+}
+
+.ficha-container .visuais-modal section .lista-visuais ul li .visual-direita section {
+    width: 100%;
+    max-width: 100%;
+    height: 50%;
+    border: none;
+    border-left: solid 2px var(--dark-blue);
+    border-top: solid 2px var(--dark-blue);
+    box-sizing: border-box;
+    background-color: var(--black-transparent);
+    display: flex;
+    align-items: center;
+    transition: all 0.1s;
+}
+
+.ficha-container .visuais-modal section .lista-visuais ul li:hover .visual-direita section {
+    transition: all 0.1s;
+    background-color: var(--white-transparent);
+}
+
+.ficha-container .visuais-modal section .lista-visuais ul .visual-escolhido .visual-direita section {
+    background-color: var(--white-transparent);
+    border-color: var(--blue);
+}
+
+.ficha-container .visuais-modal section .lista-visuais ul li .visual-direita section p {
+    margin: 0;
+    padding: 0 5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 1.25rem;
+    vertical-align: middle;
+}
+
+.ficha-container .visuais-modal section .visual-preview {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ficha-container .visuais-modal section .visual-preview h1 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+    height: 10%;
+    max-width: 90%;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.ficha-container .visuais-modal section .visual-preview img {
+    border: solid 5px var(--dark-blue);
+    background-color: var(--blue);
+    height: 70%;
+}
+
+.ficha-container .visuais-modal section .visual-preview p {
+    height: 10%;
+    font-size: 1.5rem;
+    text-align: center;
+    font-style: italic;
+    margin: 10px 0;
+}
+
+.ficha-container .visuais-modal footer {
+    width: 100%;
+    height: 10%; 
+    background-color: var(--dark-blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.ficha-container .visuais-modal footer .botao-primario {
+    font-size: 3rem;
+    margin: 5px;
+}
+
+.ficha-container .visuais-modal .codigo-modal {
+    border: solid 2px var(--dark-blue);
+    background-color: var(--blue);
+}
+
+.ficha-container .visuais-modal .codigo-modal {
+    width: 50%;
+    border: solid 5px var(--dark-blue);
+    background-color: var(--blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ficha-container .visuais-modal .codigo-modal header {
+    width: 100%;
+    background-color: var(--dark-blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 2rem;
+}
+
+.ficha-container .visuais-modal .codigo-modal header h1 {
+    font-size: 2.5rem;
+}
+
+.ficha-container .visuais-modal .codigo-modal h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 10px 0;
+    margin-top: 20px;
+}
+
+.ficha-container .visuais-modal .codigo-modal input {
+    width: 90%;
+    font-size: 2.5rem;
+    margin: 10px 0;
+    margin-bottom: 20px;
+}
+
+.ficha-container .visuais-modal .codigo-modal footer {
+    width: 100%;
+    height: auto;
+    background-color: var(--dark-blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}

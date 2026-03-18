@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=PT+Serif&family=Playfair+Display&family=Roboto+Slab&display=swap");
+
+@font-face {
+  font-family: titleFont;
+  src: url(./assets/font/alagard.ttf);
+}
+
+@font-face {
+  font-family: textFont;
+  src: url(./assets/font/Pixel.ttf);
+}
+
+:root {
+  --cursor-auto: url(./assets/img/cursors/AUTO.png), auto;
+  --cursor-pointer: url(./assets/img/cursors/POINTER.png), pointer;
+  --cursor-not-allowed: url(./assets/img/cursors/NOT_ALLOWED.png), not-allowed;
+
+  --box-interior: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset, rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+  --box-brilho: var(--white) 0px 0px 5px 2px, var(--white) 0px 0px 0px 2px;
+
+  --filtro-brilho: -2px 2px 10px rgb(255, 255, 71);
+
+  --borda-texto: 2px 0px var(--black), 0px 2px var(--black), -2px 0px var(--black), 0px -2px var(--black);
+  --borda-texto-grossa: 3px 0px var(--black), 0px 3px var(--black), -3px 0px var(--black), 0px -3px var(--black);
+  --borda-texto-branco: 2px 0px var(--white), 0px 2px var(--white), -2px 0px var(--white), 0px -2px var(--white);
+  --borda-texto-brilho: 2px 0px var(--black), 0px 2px var(--black), -2px 0px var(--black), 0px -2px var(--black), 2px 2px 15px var(--white);
+  --borda-texto-verde: 2px 0px var(--black), 0px 2px var(--black), -2px 0px var(--black), 0px -2px var(--black), 4px 0px 2px var(--green), 0px 4px 2px var(--green),
+    -4px 0px 2px var(--green), 0px -4px 2px var(--green);
+  --borda-texto-vermelho: 2px 0px var(--black), 0px 2px var(--black), -2px 0px var(--black), 0px -2px var(--black), 4px 0px 2px var(--red), 0px 4px 2px var(--red),
+    -4px 0px 2px var(--red), 0px -4px 2px var(--red);
+    --borda-texto-vermelho-fina: 2px 0px var(--black), 0px 2px var(--black), -2px 0px var(--black), 0px -2px var(--black), 2px 0px 2px var(--red), 0px 2px 2px var(--red),
+    -2px 0px 2px var(--red), 0px -2px 2px var(--red);
+    --borda-texto-amarela: 2px 0px var(--black), 0px 2px var(--black), -2px 0px var(--black), 0px -2px var(--black), 4px 0px 2px var(--yellow), 0px 4px 2px var(--yellow),
+      -4px 0px 2px var(--yellow), 0px -4px 2px var(--yellow);
+  --borda-texto-sombra: 2px 0px var(--black), 0px 2px var(--black), -2px 0px var(--black), 0px -2px var(--black), 2px 2px 10px var(--black);
+  --borda-texto-grossa-sombra: 3px 0px var(--black), 0px 3px var(--black), -3px 0px var(--black), 0px -3px var(--black), 3px 3px 15px var(--black);
+  --borda-texto-3-estrelas: 2px 0px var(--black), 0px 2px var(--black), -2px 0px var(--black), 0px -2px var(--black), 2px 2px 15px var(--blue);
+  --borda-texto-4-estrelas: 2px 0px var(--black), 0px 2px var(--black), -2px 0px var(--black), 0px -2px var(--black), 2px 2px 15px var(--blue);
+  --borda-texto-5-estrelas: 2px 0px var(--black), 0px 2px var(--black), -2px 0px var(--black), 0px -2px var(--black), 2px 2px 15px var(--tema-amarelo);
+
+  --fundo-modal: #7ba1b8;
+  --fundo-janela: #ebebeb;
+  --fundo-destaque: #c5d0dd;
+  --texto-destaque: #a7c5e9;
+  --fundo-destaque: #c5d0dd;
+
+  --black: #000000;
+  --mid-black: #080808;
+  --light-black: #181818;
+  --grey: #494949;
+  --light-grey: #d4d4d4;
+  --white: #ffffff;
+  --red: #fe2826;
+  --mid-red: #a70906;
+  --dark-red: #61110f;
+  --red-transparent: #b90b08d8;
+  --light-yellow: #ffd859;
+  --yellow: #ffcc26;
+  --orange: #ffa126;
+  --dark-black-transparent: #000000e5;
+  --black-transparent: #00000065;
+  --dark-grey-transparent: #616161b0;
+  --grey-transparent: #d4d4d4b0;
+  --yellow-transparent: #fdff7698;
+  --white-transparent: #ffffffb0;
+  --cyan-transparent: #8bf2ff63;
+  --blue-transparent: #1e43949c;
+  --purple-transparent: #301e619c;
+  --light-blue: #82dcfd;
+  --pacific-blue: #2596be;
+  --blue-grey: #7ba1b8;
+  --blue-metal: #6487a8;
+  --blue-green: #00ff96;
+  --pure-blue: #0051ff;
+  --blue: #1e4394;
+  --mid-blue: #0d2f7a;
+  --dark-blue: #0f2249;
+  --light-green: #43d843;
+  --green: #00b800;
+  --mid-green: #0a610a;
+  --dark-green: #0b410b;
+  --light-purple: #3728bd;
+  --purple: #1f166d;
+  --dark-purple: #0f0535;
+  --cyan: #44dbfa;
+  --background: #f0f0f0;
+
+  --card-3-estrelas: linear-gradient(0deg, rgb(92, 154, 196) 10%, rgb(8, 103, 141) 70%);
+  --card-4-estrelas: linear-gradient(0deg, rgb(137, 3, 199) 10%, rgba(67, 0, 103, 1) 70%);
+  --card-5-estrelas: linear-gradient(0deg, rgb(255, 207, 49) 10%, rgb(207, 159, 0) 70%);
+  --card-aliado: linear-gradient(0deg, rgb(11, 114, 11) 10%, rgb(6, 71, 6) 70%);
+
+  --fundo-FOGO: linear-gradient(0deg, rgb(107, 4, 4) 0%, rgb(180, 17, 17) 100%);
+  --fundo-AGUA: linear-gradient(0deg, rgb(11, 4, 107) 0%, rgb(17, 74, 180) 100%);
+  --fundo-ACIDO: linear-gradient(0deg, rgb(7, 107, 4) 0%, rgb(22, 180, 17) 100%);
+  --fundo-ELETRICO: linear-gradient(0deg, rgb(107, 92, 4) 0%, rgb(207, 178, 13) 100%);
+  --fundo-TERRA: linear-gradient(0deg, rgb(107, 54, 4) 0%, rgb(180, 109, 17) 100%);
+  --fundo-GELO: linear-gradient(0deg, rgb(19, 114, 138) 0%, rgb(26, 205, 218) 100%);
+  --fundo-AR: linear-gradient(0deg, rgb(4, 107, 76) 0%, rgb(17, 180, 118) 100%);
+  --fundo-LUZ: linear-gradient(0deg, rgb(221, 221, 221) 0%, rgb(155, 155, 155) 100%);
+  --fundo-TREVAS: linear-gradient(0deg, rgb(39, 10, 51) 0%, rgb(68, 13, 104) 100%);
+  --fundo-FISICO: linear-gradient(0deg, rgb(43, 43, 43) 0%, rgb(92, 92, 92) 100%);
+  --fundo-NULO: linear-gradient(0deg, rgb(43, 43, 43) 0%, rgb(92, 92, 92) 100%);
+  --fundo-ESSENCIA: linear-gradient(0deg, rgb(3, 40, 133) 0%, rgb(136, 111, 1) 100%);
+  --fundo-MENTAL: linear-gradient(0deg, rgb(82, 20, 90) 0%, rgb(161, 34, 155) 100%);
+
+  --tema-amarelo: #ffd900;
+  --tema-azul: #292477;
+  --tema-ciano: #70d6da;
+  --tema-roxo: #821b99;
+  --tema-roxo-escuro: #3b0c46;
+  --tema-rosa: #b3318c;
+  --tema-preto: #0f0f0f;
+  --tema-cinza: #6e6e6e;
+  --tema-branco: #d4d4d4;
+  --tema-turquesa: #057e4c;
+  --tema-verde: #097e05;
+  --tema-verde-escuro: #11440f;
+  --tema-laranja: #da6d14;
+  --tema-vermelho: #bd0c0c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: textFont, sans-serif;
+  cursor: url(./assets/img/cursors/AUTO.png), auto;
+}
+
+button {
+  cursor: url(./assets/img/cursors/POINTER.png), pointer;
+  font-family: titleFont, sans-serif;
+}
+
+input {
+  font-family: textFont, sans-serif;
+  padding-left: 5px;
+}
+
+label {
+  cursor: url(./assets/img/cursors/POINTER.png), pointer;
+}
+
+h1 {
+  font-weight: 100;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: var(--black-transparent);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--white);
+  border-radius: 5px;
+}
+
+.toaster div {
+  font-family: textFont, sans-serif;
+  color: var(--black);
+}
+
+.toaster div img {
+  height: 1.5rem;
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0%;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes shine {
+  from {
+    filter: brightness(100%);
+  }
+  to {
+    filter: brightness(105%);
+  }
+}
+
+@keyframes topToBottom {
+  from {
+    background-position: top;
+  }
+  to {
+    background-position: bottom;
+  }
+}
+
+@keyframes leftToRight {
+  from {
+    background-position: left;
+  }
+  to {
+    background-position: right;
+  }
+}
+
+@keyframes floating {
+  from {
+    transform: translateY(-5px);
+  }
+  to {
+    transform: translateY(5px);
+  }
+}
+
+@keyframes rolar-dado-turno {
+  0% {
+    opacity: 0%;
+    transform: rotate(0deg);
+    color: transparent;
+    text-shadow: none;
+  }
+  15% {
+    opacity: 100%;
+  }
+  40% {
+    transform: rotate(1800deg);
+    color: transparent;
+    text-shadow: none;
+  }
+  50% {
+    color: var(--white);
+    text-shadow: 2px 2px var(--black);
+  }
+  95% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes sprite-em-crise {
+  0% {
+    filter: drop-shadow(5px 0px transparent) drop-shadow(-5px 0px transparent) drop-shadow(0px 5px transparent) drop-shadow(0px -5px transparent);
+  }
+  50% {
+    filter: drop-shadow(5px 0px var(--red)) drop-shadow(-5px 0px var(--red)) drop-shadow(0px 5px var(--red)) drop-shadow(0px -5px var(--red));
+  }
+  100% {
+    filter: drop-shadow(5px 0px transparent) drop-shadow(-5px 0px transparent) drop-shadow(0px 5px transparent) drop-shadow(0px -5px transparent);
+  }
+}
+
+@media screen and (max-height: 479px) {
+}
+
+@media screen and (min-height: 480px) and (max-height: 900px) {
+}

@@ -1,0 +1,151 @@
+div .modal .config {
+  background-color: var(--purple);
+  width: 60%;
+  height: 70%;
+  border: double 5px var(--dark-purple);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  overflow-y: auto;
+  padding-bottom: 1rem;
+}
+
+div .modal .config h1 {
+  background: none;
+  background-color: var(--blue);
+  text-shadow: none;
+  filter: none;
+  margin: 1rem;
+  border: double 5px var(--black);
+  border-radius: 0;
+  width: 90%;
+  justify-content: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  text-align: center;
+  padding: 5px;
+  color: var(--white);
+  font-size: 2rem;
+  font-weight: 100;
+  text-shadow: var(--borda-texto);
+}
+
+div .modal .config ul {
+  width: 85%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+div .modal .config ul li {
+  background-color: var(--white);
+  color: var(--black);
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+  border: double 5px var(--black);
+  border-radius: 0;
+  width: 90%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  padding: 5px;
+  height: 6vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+div .modal .config ul li .config-volume {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div .modal .config ul li .config-volume button {
+  margin: 0;
+  height: 25px;
+  width: 25px;
+  font-size: 1.5rem;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light-grey);
+  border: double 3px var(--black);
+  margin: 0 5px;
+  font-weight: 600;
+  color: var(--black);
+  font-family: sans-serif;
+  text-shadow: none;
+  transition: all 0.1s;
+}
+
+div .modal .config ul li .config-volume button:hover {
+  cursor: url(../../../../assets/img/cursors/POINTER.png), pointer;
+  transition: all 0.1s;
+  background-color: var(--grey);
+}
+
+div .modal .config ul li .config-volume h2 {
+  background-color: var(--white);
+  width: 4vh;
+  height: 4vh;
+  font-size: 1.5rem;
+  border: solid 2px var(--grey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
+  padding: 5px 10px;
+  font-weight: 100;
+}
+
+div .modal .config ul li .config-volume img {
+  height: 100%;
+  width: auto;
+  margin: 0 5px;
+}
+
+div .modal .config ul div {
+  display: flex;
+}
+
+div .modal .config ul button {
+  background-color: var(--white);
+  border: double 5px var(--black);
+  border-radius: 0;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  padding: 5px;
+  height: 3rem;
+  width: 15rem;
+  display: flex;
+  justify-content: center;
+  font-family: textFont, sans-serif;
+  color: var(--white);
+  text-shadow: var(--borda-texto);
+  align-items: center;
+  font-size: 1.75rem;
+  padding: 5px 10px;
+  font-weight: 100;
+  margin: 0.3rem 1rem;
+}
+
+div .modal .config ul button:hover {
+  transition: all 0.1s;
+  background-color: var(--light-purple);
+}
+
+@media screen and (max-height: 479px) {
+  div .modal .config ul {
+    padding: 0;
+  }
+  div .modal .config ul li {
+    width: 100%;
+    font-size: 1.4rem;
+  }
+}

@@ -1,0 +1,285 @@
+
+.ficha-social-container {
+    width: 100%;
+    height: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 2%;
+}
+
+.ficha-social-container .lacos-section {
+    width: 45%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: var(--box-interior);
+    border-radius: 5px;
+    padding: 1%;
+}
+
+.ficha-social-container .lacos-section h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    border-bottom: solid 2px var(--black-transparent);
+    padding: 0 1rem;
+}
+
+.ficha-social-container .lacos-section ul {
+    width: 90%;
+    height: 90%;
+    background-color: var(--black-transparent);
+    overflow-y: auto;
+    border: solid 2px var(--dark-blue);
+    list-style: none;
+    padding: 0;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ficha-social-container .lacos-section ul h2 {
+    font-weight: 500
+}
+
+.ficha-social-container .lacos-section ul .laco-card {
+    width: 100%;
+    height: 15%;
+    border-bottom: solid 2px var(--dark-blue);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: all 0.1s;
+}
+
+.ficha-social-container .lacos-section ul .laco-card:hover {
+    transition: all 0.1s;
+    cursor: var(--cursor-pointer);
+    filter: brightness(50%) saturate(150%);
+}
+
+.ficha-social-container .lacos-section ul .laco-card .laco-esquerda {
+    width: 20%;
+    height: 100%;
+    background-color: var(--blue);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ficha-social-container .lacos-section ul .laco-card .laco-esquerda .imagem-container {
+    height: 8vh;
+    width: 8vh;
+    border: solid 2px var(--dark-blue);
+    background-color: var(--black-transparent);
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ficha-social-container .lacos-section ul .laco-card .laco-esquerda .imagem-container img {
+    height: auto;
+    width: auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.ficha-social-container .lacos-section ul .laco-card .laco-direita {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ficha-social-container .lacos-section ul .laco-card .laco-direita header {
+    width: 100%;
+    height: 50%;
+    background-color: var(--blue);
+    display: flex;
+    align-items: center;
+}
+
+.ficha-social-container .lacos-section ul .laco-card .laco-direita header h3 {
+    text-align: left;
+    padding-left: 5px;
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.ficha-social-container .lacos-section ul .laco-card .laco-direita table {
+    width: 100%;
+    height: 50%;
+    border-collapse: collapse;
+}
+
+.ficha-social-container .lacos-section ul .laco-card .laco-direita table tr td {
+    border-top: solid 2px var(--dark-blue);
+    border-left: solid 2px var(--dark-blue);
+    border-collapse: collapse;
+    width: 33%;
+}
+
+.ficha-social-container .lacos-section ul .laco-card .laco-direita table tr td h3 {
+    text-align: center;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.ficha-social-container .tracos-section {
+    width: 45%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: var(--box-interior);
+    border-radius: 5px;
+    padding: 1%;
+}
+
+
+.ficha-social-container .tracos-section h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    border-bottom: solid 2px var(--black-transparent);
+    padding: 0 1rem;
+}
+
+.ficha-social-container .tracos-section table {
+    margin-top: 2%;
+    margin-bottom: 5%;
+    width: 95%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    font-size: 1.5rem;
+}
+
+.ficha-social-container .tracos-section table tr {
+    border: solid 2px var(--dark-blue);
+    border-collapse: collapse;
+}
+
+.ficha-social-container .tracos-section table th {
+    border: solid 2px var(--dark-blue);
+    border-collapse: collapse;
+    font-weight: 500;
+    text-align: left;
+    background-color: var(--blue);
+    width: 25%;
+    padding: 0 0.5rem;
+}
+
+.ficha-social-container .tracos-section table th img {
+    height: 2rem;
+    margin: 0 5px
+}
+
+.ficha-social-container .tracos-section table td {
+    border: solid 2px var(--dark-blue);
+    border-collapse: collapse;
+    padding: 0 10px;
+    text-align: left;
+    background-color: var(--black-transparent);
+    width: 60%;
+    font-size: 1.5rem;
+    overflow-x: auto;
+}
+
+.ficha-social-container .tracos-section table .traco-input {
+    border: solid 2px var(--dark-blue);
+    border-collapse: collapse;
+    padding: 0;
+    text-align: center;
+    background-color: var(--black-transparent);
+}
+
+.ficha-social-container .tracos-section table .traco-input input {
+    width: 95%;
+    height: 100%;
+    font-size: 1.5rem;
+    font-family: textFont, sans-serif;
+    color: var(--white);
+    text-shadow: var(--borda-texto-sombra);
+    background-color: var(--black-transparent);
+    border: none;
+    border-left: solid 2px var(--blue);
+    border-right: solid 2px var(--blue);
+}
+
+.ficha-social-container .tracos-section textarea {
+    margin-top: 2%;
+    width: 95%;
+    height: 50%;
+    font-size: 1.5rem;
+    font-family: textFont, sans-serif;
+    color: var(--white);
+    text-shadow: var(--borda-texto-sombra);
+    background-color: var(--black-transparent);
+    border: solid 2px var(--blue);
+    padding: 0.5rem;
+}
+
+.ficha-social-container .tracos-section .anotacoes-desativadas {
+    border: solid 2px var(--dark-blue);
+    background-color: var(--black-transparent);
+    cursor: var(--cursor-auto);
+}
+
+.ficha-social-container .botao-alterar-container {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.ficha-social-container .botao-alterar-container .botao-primario {
+    border-radius: 0;
+    border: solid 2px var(--dark-blue);
+    background-color: var(--blue);
+    margin-bottom: -1%;
+    padding: 0.5rem;
+    font-size: 1.25rem;
+    font-family: textFont, sans-serif
+}
+
+.ficha-social-container .botao-alterar-container .botao-primario:hover {
+    background-color: var(--dark-blue);
+}
+
+@media screen and (min-height: 480px) and (max-height: 900px) {
+
+    .ficha-social-container .lacos-section h1 {
+        font-size: 1.5rem;
+    }
+    .ficha-social-container .lacos-section ul .laco-card .laco-direita header h3 {
+        font-size: 1.25rem;
+    }
+    .ficha-social-container .lacos-section ul .laco-card .laco-direita table tr td h3 {
+        font-size: 0.75rem;
+    }
+    .ficha-social-container .tracos-section h1 {
+        font-size: 1.5rem;
+    }
+    .ficha-social-container .tracos-section table {
+        font-size: 1rem;
+    }
+    .ficha-social-container .tracos-section table td {
+        font-size: 1rem;
+    }
+    .ficha-social-container .tracos-section table .traco-input input {
+        font-size: 1rem;
+    }
+    .ficha-social-container .tracos-section textarea {
+        font-size: 1rem;
+    }
+
+    .ficha-social-container .botao-alterar-container .botao-primario {
+        font-size: 1rem;
+        padding: 5px;
+    }
+}

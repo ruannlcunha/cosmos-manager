@@ -1,0 +1,294 @@
+.ficha-classes-container {
+    width: 100%;
+    height: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 2%;
+}
+
+.ficha-classes-container .classes-section {
+    width: 45%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: var(--box-interior);
+    border-radius: 5px;
+    padding: 1%;
+}
+
+.ficha-classes-container .classes-section h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    border-bottom: solid 2px var(--black-transparent);
+    padding: 0 1rem;
+    margin-bottom: 5%;
+}
+
+.ficha-classes-container .classes-section .lista-classes {
+    width: 95%;
+    height: 80%;
+    padding: 0;
+    margin: 0;
+    margin-top: 5px;
+    border: solid 2px var(--dark-blue);
+    background-color: var(--black-transparent);
+    list-style: none;
+    overflow-y: auto;
+}
+
+.ficha-classes-container .classes-section .lista-classes li {
+    margin-bottom: 5px;
+    transition: all 0.1s;
+}
+
+.ficha-classes-container .classes-section .lista-classes li:hover {
+    transition: all 0.1s;
+    cursor: var(--cursor-pointer);
+    filter: brightness(50%) saturate(150%);
+}
+
+.ficha-classes-container .classes-section .lista-classes li table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.ficha-classes-container .classes-section .lista-classes li table tr {
+    width: 100%;
+    border-top: solid 2px var(--dark-blue);
+    border-bottom: solid 2px var(--dark-blue);
+    border-collapse: collapse;
+    transition: all 0.1s;
+}
+
+.ficha-classes-container .classes-section .lista-classes li table tr th {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 1.75rem;
+    font-weight: 500;
+    padding: 5px;
+    background-color: var(--dark-blue);
+}
+
+.ficha-classes-container .classes-section .lista-classes li table tr td {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 5px;
+    background-color: var(--blue);
+}
+
+.ficha-classes-container .classes-section .lista-classes li table tr .descricao {
+    height: 2rem;
+    background-color: var(--black-transparent);
+    font-size: 1.25rem;
+}
+
+.ficha-classes-container .niveis-section {
+    width: 45%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: var(--box-interior);
+    border-radius: 5px;
+    padding: 1%;
+}
+
+
+.ficha-classes-container .niveis-section h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    border-bottom: solid 2px var(--black-transparent);
+    padding: 0 1rem;
+    margin-bottom: 5%;
+}
+
+.ficha-classes-container .niveis-section ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 95%;
+}
+
+.ficha-classes-container .niveis-section ul li {
+    width: 100%;
+    display: flex;
+    align-items: self-end;
+    justify-content: space-between;
+    border-bottom: double 2px var(--dark-blue);
+    border-radius: 5px;
+    background: linear-gradient(0deg, var(--blue) 50%, transparent 55%);
+    margin-bottom: 10px;
+}
+
+.ficha-classes-container .niveis-section ul .experiencia-container {
+    background: linear-gradient(0deg, var(--light-blue) 50%, transparent 55%);
+}
+
+.ficha-classes-container .niveis-section ul li h1 {
+    border: none;
+    font-size: 1.75rem;
+    margin: 0;
+}
+
+.ficha-classes-container .niveis-section ul li .nivel-valor {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    height: auto;
+    justify-content: space-between;
+}
+
+.ficha-classes-container .niveis-section ul li .nivel-valor .valor-container {
+    margin: 0;
+    width: 7vh;
+    height: 7vh;
+    border-radius: 100%;
+    border: double 5px var(--dark-blue);
+    background-color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.1s;
+}
+
+.ficha-classes-container .niveis-section ul li .nivel-valor .valor-container h2 {
+    margin: 0;
+    font-size: 2.5rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    font-weight: 500;
+}
+
+.ficha-classes-container .niveis-section ul li .nivel-valor .valor-container input {
+    width: 100%;
+    height: 100%;
+    background-color: var(--black-transparent);
+    font-size: 2.5rem;
+    border: none;
+    font-family: textFont, sans-serif;
+    color: var(--white);
+    text-shadow: var(--borda-texto);
+    text-align: center;
+    padding: 0;
+}
+
+.ficha-classes-container .niveis-section ul li .nivel-valor .valor-container:hover h2 {
+    margin: 0;
+    transition: all 0.1s;
+    cursor: var(--cursor-pointer);
+    background: var(--black-transparent);
+}
+
+.ficha-classes-container .niveis-section ul .experiencia-container .nivel-valor .valor-container {
+    width: 7vh;
+    height: 7vh;
+    border-radius: 5px;
+    background-color: var(--light-blue);
+}
+
+.ficha-classes-container .niveis-section ul .experiencia-container .nivel-valor .valor-container h2 {
+    border-radius: 0;
+}
+
+.ficha-classes-container .niveis-section ul li .nivel-valor .botao-primario {
+    width: 45%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ficha-classes-container .niveis-section ul li .nivel-valor .botao-primario img {
+    width: 75%;
+}
+
+.ficha-classes-container .niveis-section textarea {
+    margin-top: 2%;
+    width: 95%;
+    height: 50%;
+    font-size: 1.5rem;
+    font-family: textFont, sans-serif;
+    color: var(--white);
+    text-shadow: var(--borda-texto-sombra);
+    background-color: var(--dark-black-transparent);
+    border: solid 2px var(--blue);
+    padding: 0.5rem;
+}
+
+.ficha-classes-container .niveis-section .poderes-desativados {
+    border: solid 2px var(--dark-blue);
+    background-color: var(--black-transparent);
+    cursor: var(--cursor-auto);
+}
+
+.ficha-classes-container .botao-alterar-container {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.ficha-classes-container .botao-alterar-container .botao-primario {
+    border-radius: 0;
+    border: solid 2px var(--dark-blue);
+    background-color: var(--blue);
+    padding: 0.5rem;
+    font-size: 1.25rem;
+    font-family: textFont, sans-serif
+}
+
+.ficha-classes-container .botao-alterar-container .botao-primario:hover {
+    background-color: var(--dark-blue);
+}
+
+
+@media screen and (min-height: 480px) and (max-height: 900px) {
+    .ficha-classes-container .classes-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .ficha-classes-container .niveis-section h1 {
+        font-size: 1.5rem;
+    }
+    .ficha-classes-container .niveis-section ul li h1 {
+        font-size: 1.25rem;
+    }
+    .ficha-classes-container .niveis-section ul li .nivel-valor .valor-container h2 {
+        font-size: 1.75rem;
+    }
+    .ficha-classes-container .niveis-section ul li .nivel-valor .valor-container h2 {
+        font-size: 1.75rem;
+    }
+    .ficha-classes-container .niveis-section ul li .nivel-valor .valor-container input {
+        font-size: 1.75rem;
+        width: 200%;
+    }
+    .ficha-classes-container .niveis-section ul .experiencia-container .nivel-valor .valor-container {
+        width: 9vh;
+    }
+
+    .ficha-classes-container .botao-alterar-container .botao-primario {
+        font-size: 1rem;
+        padding: 0.25rem;
+    }
+    .ficha-classes-container .niveis-section textarea {
+        font-size: 1rem;
+    }
+    .ficha-classes-container .classes-section .lista-classes li table tr th {
+        font-size: 1.25rem;
+    }
+    .ficha-classes-container .classes-section .lista-classes li table tr td {
+        font-size: 1.25rem;
+    }
+    .ficha-classes-container .classes-section .lista-classes li table tr .descricao {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,74 @@
+.cena-dialogo-container {
+    width: 100%;
+    height: 100%;
+    background-color: var(--black);
+    background-size: 105%;
+    animation: leftToRight 60s infinite alternate;
+    background-position: left;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.cena-dialogo-container .dialogo-container {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cena-dialogo-container .dialogo-container .personagens-section {
+    width: 95%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 10%;
+}
+
+.cena-dialogo-container .dialogo-container .personagens-section img {
+    height: 100%;
+}
+
+.cena-dialogo-container .dialogo-container .dialogo-section {
+    width: 95%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.cena-dialogo-container .dialogo-container .dialogo-section header {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.cena-dialogo-container .dialogo-container .dialogo-section header h1 {
+    margin: 0;
+    padding: 0 2em;
+    color: var(--white);
+    text-shadow: var(--borda-texto-grossa-sombra);
+    font-size: 3em;
+    background-color: var(--purple);
+    border: solid 3px var(--dark-purple);
+}
+
+.cena-dialogo-container .dialogo-container .dialogo-section section {
+    width: 100%;
+    height: 80%;
+    background-color: rgba(200, 255, 0, 0.205);
+    background-color: var(--dark-black-transparent);
+    border: solid 3px var(--dark-purple);
+}
+
+.cena-dialogo-container .dialogo-container .dialogo-section section p {
+    padding: 0;
+    margin: 2%;
+    color: var(--white);
+    text-shadow: var(--borda-texto-grossa-sombra);
+    font-size: 3em;
+}

@@ -1,0 +1,104 @@
+.campanha-informacoes-container {
+    width: 90%;
+    height: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.campanha-informacoes-container .informacoes-menu {
+    width: 95%;
+    height: 98%;
+    border: solid 3px var(--dark-purple);
+    background-color: var(--purple-transparent);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.campanha-informacoes-container .informacoes-menu .informacoes-header {
+    width: 100%;
+    height: 5%;
+    background-color: var(--dark-purple);
+    color: var(--white);
+    text-shadow: var(--borda-texto);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.campanha-informacoes-container .informacoes-menu .informacoes-header h1 {
+    font-size: 2rem;
+    margin: 0;
+    text-align: center;
+}
+
+.campanha-informacoes-container .informacoes-menu table {
+    margin: 10px 0;
+    width: 90%;
+}
+
+.campanha-informacoes-container .informacoes-menu tbody {
+    width: 100%;
+}
+
+.campanha-informacoes-container .informacoes-menu tbody tr {
+    width: 100%;
+}
+
+.campanha-informacoes-container .informacoes-menu th {
+    border: solid 5px var(--dark-purple);
+    background-color: var(--purple);
+    color: var(--white);
+    text-shadow: var(--borda-texto);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.campanha-informacoes-container .informacoes-menu td {
+    border: solid 5px var(--dark-purple);
+    background-color: var(--black-transparent);
+    color: var(--white);
+    text-shadow: var(--borda-texto);
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+.campanha-informacoes-container .informacoes-menu .campanha-capa {
+    width: 90%;
+    height: 40%;
+    border: solid 5px var(--dark-purple);
+    background-color: var(--black);
+    background-position: center;
+    background-size: cover;
+}
+
+.campanha-informacoes-container .informacoes-menu .informacoes-section {
+    width: 90%;
+    height: 45%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: self-start;
+    justify-content: space-between;
+}
+
+.campanha-informacoes-container .informacoes-menu .informacoes-section table {
+    width: 45%;
+}
+
+.campanha-informacoes-container .informacoes-menu .informacoes-section td p {
+    width: 95%;
+    height: 100%;
+    overflow-y: auto;
+    font-size: 1.25rem;
+    margin: 0;
+    margin-left: 2%;
+}
+
+
+@media screen and (min-height: 480px) and (max-height: 900px) {
+    .campanha-informacoes-container .informacoes-menu .informacoes-header h1 {
+        font-size: 1.5rem;
+    }
+}

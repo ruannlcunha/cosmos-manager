@@ -1,0 +1,163 @@
+
+.ficha-social-container .laco-modal {
+    width: 75%;
+    height: 95%;
+    border: solid 5px var(--dark-blue);
+    background-color: var(--black-transparent);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ficha-container .ficha-social-container .laco-modal .laco-header {
+    width: 100%;
+    height: 8%;
+    background-color: var(--dark-blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ficha-container .ficha-social-container .laco-modal .laco-header h1 {
+    font-size: 3rem;
+    margin: 5px;
+}
+
+.ficha-container .ficha-social-container .laco-modal .laco-section {
+    height: 82%;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.ficha-container .ficha-social-container .laco-modal .laco-section table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.ficha-container .ficha-social-container .laco-modal .laco-section table tr {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.ficha-container .ficha-social-container .laco-modal .laco-section table tr th {
+    border-collapse: collapse;
+    background-color: var(--blue);
+    text-align: left;
+    
+}
+
+.ficha-container .ficha-social-container .laco-modal .laco-section table tr th h2 {
+    margin: 5px;
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+.ficha-container .ficha-social-container .laco-modal .laco-section table tr th .alterar-imagem-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ficha-container .ficha-social-container .laco-modal .laco-section table tr th .alterar-imagem-container .imagem-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+    width: 5vh;
+    border: solid 2px var(--dark-blue);
+    background-color: var(--black-transparent);
+}
+
+.ficha-container .ficha-social-container .laco-modal .laco-section table tr th .alterar-imagem-container .imagem-container img {
+    height: auto;
+    width: auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.ficha-container .ficha-social-container .laco-modal .laco-section table tr td input {
+    width: 95%;
+    background-color: var(--black-transparent);
+    border: solid 2px var(--blue);
+    margin: 5px;
+    color: var(--white);
+    text-shadow: var(--borda-texto);
+    font-family: textFont, sans-serif;
+    font-size: 2.5rem;
+    padding-left: 10px;
+}
+
+.ficha-container .ficha-social-container .laco-modal .laco-section table tr td .botao-primario {
+    font-size: 1.5rem;
+    margin: 5px;
+    width: 25%;
+}
+
+.ficha-container .ficha-social-container .laco-modal .laco-section table .linha-emocoes {
+    border-bottom: solid 5px var(--blue);
+}
+
+.ficha-container .ficha-social-container .laco-modal .laco-section table .linha-emocoes td {
+    width: 30%;
+    text-align: center;
+}
+
+.ficha-container .ficha-social-container .laco-modal .laco-section table .linha-emocoes td select {
+    margin: 10px 0;
+    width: 90%;
+    font-size: 2rem;
+    font-family: textFont, sans-serif;
+    cursor: var(--cursor-pointer);
+}
+
+.ficha-container .ficha-social-container .laco-modal .laco-section table .linha-emocoes td .emocao-positiva {
+    color: var(--white);
+    background-color: var(--dark-green);
+}
+
+.ficha-container .ficha-social-container .laco-modal .laco-section table .linha-emocoes td .emocao-negativa {
+    color: var(--white);
+    background-color: var(--dark-red);
+}
+
+
+.ficha-social-container .laco-modal footer {
+    width: 100%;
+    height: 10%; 
+    background-color: var(--dark-blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.ficha-social-container .laco-modal footer .botao-primario {
+    font-size: 3rem;
+    margin: 5px;
+}
+
+@media screen and (min-height: 480px) and (max-height: 900px) {
+    .ficha-container .ficha-social-container .laco-modal .laco-header h1 {
+        font-size: 2rem;
+    }
+    .ficha-container .ficha-social-container .laco-modal .laco-section table tr th h2 {
+        font-size: 2rem;
+    }
+    .ficha-container .ficha-social-container .laco-modal .laco-section table tr td input {
+        font-size: 1.5rem;
+    }
+    .ficha-container .ficha-social-container .laco-modal .laco-section table tr td textarea {
+        font-size: 1.5rem;
+        height: 30vh;
+    }
+    .ficha-container .ficha-social-container .laco-modal .laco-section table tr td .botao-primario {
+        font-size: 1.25rem;
+        width: 15%;
+    }
+    .ficha-container .ficha-social-container .laco-modal .laco-section table .linha-emocoes td select {
+        font-size: 1.5rem;
+    }
+    .ficha-social-container .laco-modal footer .botao-primario {
+        font-size: 1.75rem;
+    }
+}

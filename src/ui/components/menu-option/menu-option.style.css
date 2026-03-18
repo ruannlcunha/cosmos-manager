@@ -1,0 +1,44 @@
+div .home-section .menu-options ul .menu-option {
+  height: 3rem;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.75rem;
+  color: var(--white);
+  text-shadow: var(--borda-texto);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  margin: 5px 0;
+  background-color: var(--white);
+  border: solid 3px var(--purple);
+  transition: all 0.1s;
+}
+
+div .home-section .menu-options ul .menu-option:hover {
+  cursor: pointer;
+  height: 3.5rem;
+  width: 95%;
+  background-color: var(--blue);
+  transition: all 0.1s;
+  box-shadow: var(--white-transparent) 0px 0px 1px 2px, rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+div .home-section .menu-options ul .menu-option img {
+  height: 95%;
+  margin: 0 1rem;
+  transition: all 0.1s;
+}
+
+div .home-section .menu-options ul .menu-option:hover img {
+  filter: drop-shadow(-1px 1px 5px var(--purple));
+  transition: all 0.1s;
+}
+
+@media screen and (max-height: 479px) {
+  div .home-section .menu-options ul .menu-option {
+    font-size: 1.25rem;
+    height: 2.5rem;
+  }
+  div .home-section .menu-options ul .menu-option:hover {
+    height: 3rem;
+  }
+}

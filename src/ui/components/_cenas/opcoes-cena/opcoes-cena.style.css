@@ -1,0 +1,46 @@
+.opcoes-cena {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 0.5rem;
+  transition: all 0.5s;
+  z-index: 999;
+}
+
+.opcoes-cena h3 {
+  color: var(--white);
+  text-shadow: 2px 2px var(--black);
+  font-size: 1.5rem;
+  font-weight: 100;
+  font-family: titleFont, sans-serif;
+}
+
+.opcoes-cena button {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: none;
+  margin: 0 0.3rem;
+  border: solid 2px var(--white);
+  transition: all 0.1s;
+  background-size: cover;
+  box-shadow: var(--black) 0px 0px 0px 2px;
+}
+
+.opcoes-cena button:hover {
+  cursor: url(../../../../assets/img/cursors/POINTER.png), pointer;
+  background-color: var(--grey-transparent);
+  transition: all 0.1s;
+}
+
+.opcoes-cena .opcao-bloqueada {
+  opacity: 25%;
+}
+
+.opcoes-cena .opcao-bloqueada:hover {
+  cursor: url(../../../../assets/img/cursors/NOT_ALLOWED.png), not-allowed;
+  background-color: transparent;
+}

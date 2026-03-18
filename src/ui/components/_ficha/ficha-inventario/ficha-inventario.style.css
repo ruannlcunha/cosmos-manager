@@ -1,0 +1,481 @@
+.ficha-inventario-container {
+    width: 100%;
+    height: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 2%;
+}
+
+.ficha-inventario-container .equipamentos-section {
+    width: 45%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    box-shadow: var(--box-interior);
+    border-radius: 5px;
+    padding: 1%;
+}
+
+.ficha-inventario-container .equipamentos-section h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    border-bottom: solid 2px var(--black-transparent);
+    padding: 0 1rem;
+}
+
+.ficha-inventario-container .equipamentos-section table {
+    margin-top: 2%;
+    margin-bottom: 5%;
+    width: 95%;
+    border-collapse: collapse;
+    font-size: 1.75rem;
+}
+
+.ficha-inventario-container .equipamentos-section table tr {
+    border: solid 2px var(--dark-blue);
+    border-collapse: collapse;
+}
+
+.ficha-inventario-container .equipamentos-section table th {
+    border: solid 2px var(--dark-blue);
+    border-collapse: collapse;
+    font-weight: 500;
+    text-align: left;
+    background-color: var(--blue);
+    vertical-align: middle;
+    width: 75%;
+}
+
+.ficha-inventario-container .equipamentos-section table th img {
+    height: 3vh;
+    margin: 0 5px;
+    vertical-align: bottom;
+}
+
+.ficha-inventario-container .equipamentos-section table td {
+    border: solid 2px var(--dark-blue);
+    border-collapse: collapse;
+    padding: 0 10px;
+    text-align: center;
+    background-color: var(--black-transparent);
+    width: 60%;
+    font-size: 1.5rem;
+}
+
+.ficha-inventario-container .equipamentos-section table .valor-equipamento input {
+    border: solid 2px var(--blue);
+    width: 100%;
+    font-size: 1.5rem;
+    color: var(--white);
+    text-shadow: var(--borda-texto);
+    font-family: textFont, sans-serif;
+    background-color: var(--black-transparent);
+    text-align: center;
+}
+
+.ficha-inventario-container .equipamentos-section .lista-equipamento {
+    width: 95%;
+    list-style: none;
+    padding: 0;
+}
+
+.ficha-inventario-container .equipamentos-section .lista-equipamento .card-equipamento {
+    width: 100%;
+    border: solid 2px var(--dark-blue);
+    display: flex;
+    margin: 5px 0;
+    transition: all 0.1s;
+}
+
+.ficha-inventario-container .equipamentos-section .lista-equipamento .card-equipamento:hover {
+    transition: all 0.1s;
+    cursor: var(--cursor-pointer);
+    filter: brightness(50%) saturate(150%);
+}
+
+.ficha-inventario-container .equipamentos-section .lista-equipamento .card-equipamento .equipamento-esquerda {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--blue);
+}
+
+.ficha-inventario-container .equipamentos-section .lista-equipamento .card-equipamento .equipamento-esquerda .equipamento-imagem {
+    height: 7vh;
+    width: 7vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px var(--dark-blue);
+    background-color: var(--black-transparent);
+}
+
+.ficha-inventario-container .equipamentos-section .lista-equipamento .card-equipamento .equipamento-esquerda .equipamento-imagem img {
+    height: auto;
+    width: auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.ficha-inventario-container .equipamentos-section .lista-equipamento .card-equipamento .equipamento-info {
+    margin: 0;
+    width: 75%;
+    max-height: 100%;
+    border: none;
+    table-layout: fixed;
+}
+
+.ficha-inventario-container .equipamentos-section .lista-equipamento .card-equipamento .equipamento-info tr {
+    width: 100%;
+    max-width: 100%;
+}
+
+.ficha-inventario-container .equipamentos-section .lista-equipamento .card-equipamento .equipamento-info th {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.ficha-inventario-container .equipamentos-section .lista-equipamento .card-equipamento .equipamento-info th h1 {
+    font-size: 1.75rem;
+    border: none;
+    padding: 0 0.5rem;
+}
+
+.ficha-inventario-container .equipamentos-section .lista-equipamento .card-equipamento .equipamento-info th h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 0 0.5rem;
+}
+
+.ficha-inventario-container .equipamentos-section .lista-equipamento .card-equipamento .equipamento-info td {
+    font-size: 1.25rem;
+    text-align: left;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.ficha-inventario-container .itens-section {
+    width: 45%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: var(--box-interior);
+    border-radius: 5px;
+    padding: 1%;
+}
+
+
+.ficha-inventario-container .itens-section h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    border-bottom: solid 2px var(--black-transparent);
+    padding: 0 1rem;
+}
+
+.ficha-inventario-container .itens-section .botao-alterar-container {
+    display: flex;
+    align-items: self-end;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.ficha-inventario-container .itens-section .botao-alterar-container table {
+    border-collapse: collapse;
+    font-size: 1.5rem;
+    height: 100%;
+}
+
+.ficha-inventario-container .itens-section .botao-alterar-container table th {
+    border: solid 2px var(--dark-blue);
+    border-collapse: collapse;
+    font-weight: 500;
+    text-align: left;
+    background-color: var(--blue);
+    vertical-align: middle;
+    white-space: nowrap;
+    padding: 0 5px;
+}
+
+.ficha-inventario-container .itens-section .botao-alterar-container table img {
+    height: 3vh;
+    margin: 0 5px;
+    vertical-align: middle;
+}
+
+.ficha-inventario-container .itens-section .botao-alterar-container table td {
+    border: solid 2px var(--dark-blue);
+    border-collapse: collapse;
+    text-align: center;
+    background-color: var(--black-transparent);
+    font-size: 1.5rem;
+}
+
+.ficha-inventario-container .itens-section .botao-alterar-container table .valor-dinheiro {
+    padding: 0 5px;
+    transition: all 0.1s;
+    cursor: var(--cursor-pointer);
+    width: 5rem;
+}
+
+.ficha-inventario-container .itens-section .botao-alterar-container table .valor-dinheiro:hover {
+    transition: all 0.1s;
+    background-color: var(--black-transparent);
+}
+
+.ficha-inventario-container .itens-section .botao-alterar-container table .valor-dinheiro input {
+    width: 5vw;
+    background-color: var(--black-transparent);
+    font-size: 1.5rem;
+    color: var(--white);
+    text-shadow: var(--borda-texto);
+    border: solid 2px var(--blue);
+    font-family: textFont, sans-serif;
+    text-align: center;
+}
+
+.ficha-inventario-container .itens-section .botao-alterar-container table .botao-primario {
+    padding: 0;
+    border: none;
+    height: 100%;
+    width: 100%;
+}
+
+.ficha-inventario-container .itens-section .botao-alterar-container .botao-primario {
+    margin: 0
+}
+
+.ficha-inventario-container .itens-section ul {
+    width: 90%;
+    height: 80%;
+    background-color: var(--black-transparent);
+    overflow-y: auto;
+    border: solid 2px var(--dark-blue);
+    list-style: none;
+    padding: 0;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ficha-inventario-container .itens-section ul h2 {
+    font-weight: 500
+}
+
+.ficha-inventario-container .itens-section ul .item-card {
+    width: 100%;
+    height: 15%;
+    border-bottom: solid 2px var(--dark-blue);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: all 0.1s;
+}
+
+.ficha-inventario-container .itens-section ul .item-card:hover {
+    transition: all 0.1s;
+    cursor: var(--cursor-pointer);
+    filter: brightness(50%) saturate(150%);
+}
+
+.ficha-inventario-container .itens-section ul .item-card .item-esquerda {
+    width: 20%;
+    height: 100%;
+    background-color: var(--blue);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.ficha-inventario-container .itens-section ul .item-card .item-esquerda .imagem-container {
+    height: 8vh;
+    width: 8vh;
+    border: solid 2px var(--dark-blue);
+    background-color: var(--black-transparent);
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ficha-inventario-container .itens-section ul .item-card .item-esquerda .imagem-container img {
+    height: auto;
+    width: auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.ficha-inventario-container .itens-section ul .item-card .item-direita {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ficha-inventario-container .itens-section ul .item-card .item-direita header {
+    width: 100%;
+    height: 40%;
+    background-color: var(--blue);
+    display: flex;
+    align-items: center;
+}
+
+.ficha-inventario-container .itens-section ul .item-card .item-direita header h3 {
+    text-align: left;
+    padding-left: 5px;
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.ficha-inventario-container .itens-section ul .item-card .item-direita section {
+    width: 100%;
+    max-width: 100%;
+    height: 30%;
+    border: none;
+    border-left: solid 2px var(--dark-blue);
+    border-top: solid 2px var(--dark-blue);
+    box-sizing: border-box;
+    background-color: var(--black-transparent);
+    display: flex;
+    align-items: center;
+}
+
+.ficha-inventario-container .itens-section ul .item-card .item-direita .item-custo {
+    flex-direction: row;
+    background-color: var(--dark-blue);
+    padding-left: 5px;
+}
+
+.ficha-inventario-container .itens-section ul .item-card .item-direita .item-custo h2 {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.ficha-inventario-container .itens-section ul .item-card .item-direita .item-custo img {
+    height: 95%;
+}
+
+.ficha-inventario-container .itens-section ul .item-card .item-direita section p {
+    margin: 0;
+    padding: 0 5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 1.25rem;
+    vertical-align: middle;
+}
+
+.ficha-inventario-container .botao-alterar-container {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.ficha-inventario-container .botao-alterar-container .botao-primario {
+    border-radius: 0;
+    border: solid 2px var(--dark-blue);
+    background-color: var(--blue);
+    margin-bottom: -1%;
+    padding: 0.5rem;
+    font-size: 1.25rem;
+    font-family: textFont, sans-serif
+}
+
+.ficha-inventario-container .botao-alterar-container .botao-primario:hover {
+    background-color: var(--dark-blue);
+}
+
+@media screen and (min-height: 480px) and (max-height: 900px) {
+    .ficha-inventario-container .equipamentos-section h1 {
+        font-size: 1.5rem
+    }
+
+    .ficha-inventario-container .equipamentos-section .lista-equipamento .card-equipamento .equipamento-info th h1 {
+        font-size: 1rem;
+    }
+
+    .ficha-inventario-container .equipamentos-section .lista-equipamento .card-equipamento .equipamento-info th h2 {
+        font-size: 1rem;
+    }
+
+    .ficha-inventario-container .equipamentos-section .lista-equipamento .card-equipamento .equipamento-info td {
+        font-size: 1rem;
+    }
+
+    .ficha-inventario-container .equipamentos-section table th {
+        font-size: 1.25rem;
+    }
+
+    .ficha-inventario-container .equipamentos-section table td {
+        font-size: 1.25rem;
+    }
+
+    .ficha-inventario-container .equipamentos-section table .valor-equipamento input {
+        font-size: 1.25rem;
+    }
+
+    .ficha-inventario-container .itens-section h1 {
+        font-size: 1.5rem
+    }
+
+    .ficha-inventario-container .itens-section ul .item-card .item-esquerda .imagem-container {
+        height: 7vh;
+        width: 7vh;
+    }
+
+    .ficha-inventario-container .itens-section ul .item-card .item-direita header h3 {
+        font-size: 1.25rem;
+    }
+
+    .ficha-inventario-container .itens-section ul .item-card .item-direita section p {
+        font-size: 1rem;
+    }
+
+    .ficha-inventario-container .itens-section ul .item-card .item-direita .item-custo h2 {
+        font-size: 1rem;
+    }
+
+    .ficha-inventario-container .itens-section .botao-alterar-container {
+        align-items: self-start;
+        flex-direction: column;
+    }
+
+    .ficha-inventario-container .itens-section .botao-alterar-container table {
+        margin: 5px 0;
+    }
+
+    .ficha-inventario-container .itens-section .botao-alterar-container table th {
+        font-size: 1.25rem;
+    }
+
+    .ficha-inventario-container .itens-section .botao-alterar-container table img {
+        height: 4vh;
+    }
+
+    .ficha-inventario-container .itens-section .botao-alterar-container table .valor-dinheiro {
+        font-size: 1.25rem;
+    }
+
+    .ficha-inventario-container .itens-section .botao-alterar-container table .valor-dinheiro input {
+        font-size: 1.25rem;
+    }
+
+    .ficha-inventario-container .botao-alterar-container .botao-primario {
+        font-size: 1rem;
+        padding: 5px;
+    }
+}

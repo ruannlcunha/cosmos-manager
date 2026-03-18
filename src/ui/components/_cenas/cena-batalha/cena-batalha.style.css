@@ -1,0 +1,531 @@
+.cena-batalha-container {
+  width: 100%;
+  height: 100%;
+  background-color: var(--black);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cena-batalha-container .turnos {
+  width: fit-content;
+  height: 10%;
+  position: absolute;
+  top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: fade-in 0.5s;
+}
+
+.cena-batalha-container .turnos header {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin: 10px 0;
+  color: var(--white);
+  text-shadow: 2px 3px 2px var(--black);
+  font-family: titleFont, sans-serif;
+}
+
+.cena-batalha-container .turnos section {
+  width: 100%;
+  height: 70%;
+  margin: 0;
+  background: rgb(173, 173, 173);
+  background: linear-gradient(0deg, rgba(173, 173, 173, 0) 46%, rgba(255, 255, 255, 1) 46%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 54%, rgba(173, 173, 173, 0) 54%);
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cena-batalha-container .turnos section div {
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: var(--light-grey);
+  margin: 0 0.5rem;
+  border: solid 2px var(--white);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.cena-batalha-container .turnos section .turnos-ativo {
+  height: 4rem;
+  width: 4rem;
+}
+
+.cena-batalha-container .turnos section .turnos-ativo.aliado {
+  border: solid 3px var(--cyan);
+  filter: drop-shadow(-2px 2px 5px var(--light-blue));
+}
+
+.cena-batalha-container .turnos section .turnos-ativo.inimigo {
+  border: solid 3px var(--red);
+  filter: drop-shadow(-2px 2px 5px var(--red));
+}
+
+.cena-batalha-container .turnos section .turnos-ponta {
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-bottom-color: var(--white);
+  position: relative;
+  top: -10px;
+  background: none;
+}
+
+.cena-batalha-container .turnos section .turnos-ponta:after {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 10px;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: var(--white);
+}
+
+.cena-screen .batalha-hud {
+  width: 100%;
+  height: 30%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  flex-direction: row;
+  align-items: self-end;
+  border-right: none;
+  animation: fade-in 0.5s;
+  transition: all 0.5s;
+}
+
+.cena-screen .batalha-hud .hud-status {
+  width: 45%;
+  height: 100%;
+  border-top: double var(--white) 5px;
+  border-radius: 0 5px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: self-end;
+  background-position: right;
+  background-size: cover;
+}
+
+.cena-screen .batalha-hud .hud-status .status-header {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  border-bottom: double var(--white) 5px;
+  border-radius: 0 0 5px 0;
+}
+
+.cena-screen .batalha-hud .hud-status .status-header div {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.cena-screen .batalha-hud .hud-status .status-header div h1 {
+  margin: 0;
+  font-size: 2.25rem;
+  font-weight: 300;
+  text-shadow: 2px 3px var(--black);
+  color: var(--white);
+  font-family: textFont, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  filter: drop-shadow(-2px 2px 8px var(--black-transparent));
+}
+
+.cena-screen .batalha-hud .hud-status .status-header div img {
+  position: static;
+  height: 50%;
+  width: auto;
+  animation: none;
+  margin: 0 5px;
+  filter: drop-shadow(-2px 2px 10px var(--black-transparent));
+}
+
+.cena-screen .batalha-hud .hud-status .status-section {
+  width: 50%;
+  height: 70%;
+  color: var(--white);
+  text-shadow: 2px 3px var(--black);
+  display: flex;
+  flex-direction: column;
+}
+
+.cena-screen .batalha-hud .hud-status .status-section div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.cena-screen .batalha-hud .hud-status .status-section div img {
+  height: 1.5vw;
+  width: auto;
+  border: solid 2px var(--white);
+  background-color: var(--red);
+  position: static;
+  margin: 0 5px;
+  animation: none;
+  transition: all 0.1s;
+}
+
+.cena-screen .batalha-hud .hud-status .status-section div h2 {
+  margin: 10px 5px 5px 0;
+  font-weight: 300;
+  font-family: titleFont, sans-serif;
+  font-size: 1.5rem;
+  filter: drop-shadow(-2px 2px 8px var(--black-transparent));
+}
+
+.cena-screen .batalha-hud .hud-status .status-section div .modal {
+  z-index: 1001;
+}
+
+.cena-screen .batalha-hud .hud-status .status-section .batalha-hud-barra {
+  width: 90%;
+  height: 10%;
+  border: solid 3px var(--white);
+  transform: skew(-25deg);
+}
+
+.cena-screen .batalha-hud .hud-status .perfil-personagem {
+  position: absolute;
+  bottom: 0;
+  width: 22%;
+  animation: hud-perfil 1s alternate infinite ease-in-out;
+  display: flex;
+  align-items: flex-end;
+  left: 0;
+}
+
+.cena-screen .batalha-hud .hud-status .perfil-personagem img {
+  width: 100%;
+}
+
+.cena-screen .batalha-hud .hud-status .perfil-personagem h1 {
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  font-size: 2.5rem;
+  color: var(--white);
+  text-shadow: var(--borda-texto-sombra);
+  margin: 5px 0;
+  opacity: 25%;
+  transition: all 0.1s;
+}
+
+.cena-screen .batalha-hud .hud-status .perfil-personagem:hover h1 {
+  transition: all 0.1s;
+  opacity: 100%;
+}
+
+.cena-screen .batalha-hud .hud-acoes {
+  width: 20%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin-left: 1rem;
+  margin-right: 0.6rem;
+  padding-bottom: 2vh;
+  position: relative;
+  z-index: 999;
+}
+
+.cena-screen .batalha-hud .hud-acoes li {
+  width: 95%;
+  height: 25%;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  margin: 2px;
+  border: double 5px var(--white);
+  color: var(--white);
+  background-color: var(--black-transparent);
+  transition: 0.1s;
+  padding-left: 10px;
+  text-shadow: var(--borda-texto);
+}
+
+.cena-screen .batalha-hud .hud-acoes li:hover {
+  transition: 0.1s;
+  cursor: url(../../../../assets/img/cursors/POINTER.png), pointer;
+  width: 100%;
+  background-color: var(--cyan-transparent);
+}
+
+.cena-screen .batalha-hud .hud-sub-acoes {
+  width: 30%;
+  height: 175%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  background-color: var(--dark-black-transparent);
+  border: double 5px var(--dark-blue);
+  margin-bottom: 0.5rem;
+  animation: fade-in 0.1s;
+  position: relative;
+  z-index: 1000;
+}
+
+.cena-screen .batalha-hud .hud-sub-acoes .sub-acoes-header {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-size: 1.5rem;
+  text-shadow: var(--borda-texto);
+  border-bottom: solid 2px var(--dark-black-transparent);
+  background-color: var(--dark-blue);
+}
+
+.cena-screen .batalha-hud .hud-sub-acoes .sub-acoes-section {
+  height: 90%;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.cena-screen .batalha-hud .hud-sub-acoes .sub-acoes-section table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.cena-screen .batalha-hud .hud-sub-acoes .sub-acoes-section table tbody {
+  width: 100%;
+}
+
+.cena-screen .batalha-hud .hud-sub-acoes .sub-acoes-section table tbody tr {
+  width: 100%;
+  border: solid 2px var(--dark-blue);
+}
+
+.cena-screen .batalha-hud .hud-sub-acoes .sub-acoes-section table tbody tr th {
+  border: solid 2px var(--dark-blue);
+  background-color: var(--blue);
+  font-size: 1.5rem;
+  color: var(--white);
+  text-shadow: var(--borda-texto);
+  font-weight: 500;
+  padding: 5px;
+}
+
+.cena-screen .batalha-hud .hud-sub-acoes .sub-acoes-section table tbody tr td p {
+  white-space: pre-line
+}
+
+.cena-screen .batalha-hud .hud-sub-acoes .sub-acoes-section table tbody tr td {
+  text-align: left;
+  border: solid 2px var(--dark-blue);
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: var(--white);
+  padding: 5px;
+}
+
+.cena-screen .campo-de-batalha {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: bottom;
+  transition: all 0.2s;
+}
+
+.cena-screen .campo-de-batalha section {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  animation: fade-in 0.5s;
+  margin-bottom: 1rem;
+}
+
+.cena-screen .campo-de-batalha section div {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.cena-screen .campo-de-batalha section div section {
+  height: 100%;
+  width: 25%;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  position: static;
+}
+
+.cena-screen .campo-de-batalha section div section div {
+  width: fit-content;
+  height: 55%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cena-screen .campo-de-batalha section div section div .sprite-personagem {
+  height: 100%;
+  transition: all 0.1s;
+  cursor: var(--cursor-auto);
+}
+
+.cena-screen .campo-de-batalha section div section div:hover .sprite-personagem.hud-ativo {
+  cursor: var(--cursor-pointer);
+  transition: all 0.1s;
+  filter: drop-shadow(-2px 2px 5px var(--white)) drop-shadow(2px -2px 5px var(--white));
+}
+
+.cena-screen .campo-de-batalha section .esquerda section div .sprite-personagem {
+  transform: scaleX(-1);
+  transition: all 1s;
+}
+
+.cena-screen .campo-de-batalha section div section div .icones-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 6vh;
+  height: 6vh;
+  min-width: 6vh;
+  min-height: 6vh;
+  margin-bottom: -6vh;
+  background-size: contain;
+  position: relative;
+  animation: icone-ativo 2s infinite alternate-reverse ease-in-out;
+}
+
+.cena-screen .campo-de-batalha section div section div:hover .icones-container {
+  background-image: url(../../../../assets/img/icons/MAO_SELECAO.png);
+}
+
+.cena-screen .campo-de-batalha section div section div section {
+  position: relative;
+  bottom: 10%;
+  width: 100%;
+  height: 30%;
+  color: white;
+  text-shadow: var(--borda-texto);
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.cena-screen .campo-de-batalha section div section div section div {
+  height: 25%;
+  width: 100%;
+  margin: 0;
+  color: white;
+  text-shadow: var(--borda-texto);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.cena-screen .campo-de-batalha section div section div section .batalha-sprite-nome {
+  margin-bottom: 10px;
+  font-size: 1.75rem;
+  text-align: center;
+  font-weight: 300;
+  filter: drop-shadow(-2px 2px 10px var(--black));
+}
+
+.cena-screen .campo-de-batalha section div section div section div img {
+  height: 100%;
+  margin-right: -1vw;
+  position: relative;
+  right: 1.25vw;
+  filter: drop-shadow(-1px 1px 1px var(--black-transparent)) drop-shadow(1px -1px 1px var(--black-transparent));
+}
+
+.cena-screen .campo-de-batalha section div section div section .batalha-sprite-pontos {
+  width: 65%;
+  height: 10px;
+  border: solid 2px var(--white);
+  transform: skew(-50deg);
+  margin: 0;
+  position: static;
+}
+
+.cena-screen .campo-de-batalha section div section div section .condicoes {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 70%;
+}
+
+.cena-screen .campo-de-batalha section div section div section .condicoes img {
+  height: 1vw;
+  border: solid 2px var(--white);
+  background-color: var(--red);
+  filter: none;
+  margin: 0 1px;
+}
+
+@keyframes icone-ativo {
+  from {
+    top: -17%;
+  }
+
+  to {
+    top: -12%;
+  }
+}
+
+
+@keyframes hud-perfil {
+  from {
+    transform: translate(-1px, 0) scaleX(-1);
+  }
+
+  to {
+    transform: translate(0px, 0) scaleX(-1);
+  }
+}
+
+@media screen and (min-height: 480px) and (max-height: 900px) {
+
+  .cena-batalha-container .turnos section .turnos-ativo {
+    height: 3rem;
+    width: 3rem;
+  }
+  .cena-screen .campo-de-batalha section div section div section .batalha-sprite-pontos {
+    height: 8px;
+  }
+}

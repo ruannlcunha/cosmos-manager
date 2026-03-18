@@ -1,0 +1,149 @@
+
+div .item-modal {
+    width: 75%;
+    height: 95%;
+    border: solid 5px var(--dark-blue);
+    background-color: var(--black-transparent);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--white);
+    text-shadow: var(--borda-texto-sombra);
+}
+
+div div .item-modal .item-header {
+    width: 100%;
+    height: 8%;
+    background-color: var(--dark-blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div div .item-modal .item-header h1 {
+    font-size: 3rem;
+    margin: 5px;
+}
+
+div div .item-modal .item-section {
+    height: 82%;
+    width: 100%;
+    overflow-y: auto;
+}
+
+div div .item-modal .item-section table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+div div .item-modal .item-section table tr {
+    border-collapse: collapse;
+    width: 100%;
+    border-bottom: solid 3px var(--dark-blue);
+}
+
+div div .item-modal .item-section table tr th {
+    border-collapse: collapse;
+    background-color: var(--blue);
+    text-align: left;
+    
+}
+
+div div .item-modal .item-section table tr th h2 {
+    margin: 5px;
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+div div .item-modal .item-section table tr th .alterar-imagem-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+div div .item-modal .item-section table tr th .alterar-imagem-container .imagem-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+    width: 5vh;
+    border: solid 2px var(--dark-blue);
+    background-color: var(--black-transparent);
+}
+
+div div .item-modal .item-section table tr th .alterar-imagem-container .imagem-container img {
+    height: auto;
+    width: auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+div div .item-modal .item-section table tr td input {
+    width: 95%;
+    background-color: var(--black-transparent);
+    border: solid 2px var(--blue);
+    margin: 5px;
+    color: var(--white);
+    text-shadow: var(--borda-texto);
+    font-family: textFont, sans-serif;
+    font-size: 2.5rem;
+    padding-left: 10px;
+}
+
+div div .item-modal .item-section table tr td .botao-primario {
+    font-size: 1.5rem;
+    margin: 5px;
+    width: 25%;
+}
+
+div div .item-modal .item-section table tr td textarea {
+    width: 95%;
+    height: 25vh;
+    background-color: var(--black-transparent);
+    border: solid 2px var(--blue);
+    margin: 5px;
+    color: var(--white);
+    text-shadow: var(--borda-texto);
+    font-family: textFont, sans-serif;
+    font-size: 2.5rem;
+    padding-left: 10px;
+    resize: vertical;
+}
+
+div .item-modal footer {
+    width: 100%;
+    height: 10%; 
+    background-color: var(--dark-blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+div .item-modal footer .botao-primario {
+    font-size: 3rem;
+    margin: 5px;
+}
+
+@media screen and (min-height: 480px) and (max-height: 900px) {
+    div div .item-modal .item-header h1 {
+        font-size: 2rem;
+    }
+    div div .item-modal .item-section table tr th h2 {
+        font-size: 2rem;
+    }
+    div div .item-modal .item-section table tr td input {
+        font-size: 1.5rem;
+    }
+    div div .item-modal .item-section table tr td textarea {
+        font-size: 1.5rem;
+        height: 15vh;
+    }
+    div div .item-modal .item-section table tr td .botao-primario {
+        font-size: 1.25rem;
+        width: 15%;
+    }
+    div .item-modal footer .botao-primario {
+        font-size: 1.75rem;
+    }
+}

@@ -1,0 +1,105 @@
+{
+  "personagem": {
+    "id": null,
+    "ativo": 1,
+    "nome": "",
+    "identidade": "",
+    "tema": "",
+    "origem": "",
+    "cor_tema": "cinza",
+    "anotacoes": "",
+    "nivel": 0,
+    "experiencia": 0,
+    "afinidade_elemental": "NULO",
+    "poderes_gerais": "",
+    "rituais": "",
+    "dinheiro": 0,
+    "pontos": {
+      "id": null,
+      "ativo": 1,
+      "personagem_id": null,
+      "pv_atual": 1,
+      "pv_maximo": 1,
+      "pm_atual": 1,
+      "pm_maximo": 1,
+      "pi_atual": 1,
+      "pi_maximo": 1,
+      "pf": 1
+    },
+    "atributos": {
+      "id": null,
+      "ativo": 1,
+      "personagem_id": null,
+      "destreza_base": "d6",
+      "destreza_atual": "d6",
+      "vigor_base": "d6",
+      "vigor_atual": "d6",
+      "astucia_base": "d6",
+      "astucia_atual": "d6",
+      "vontade_base": "d6",
+      "vontade_atual": "d6",
+      "defesa": "0",
+      "defesa_magica": "0",
+      "iniciativa": "0"
+    },
+    "condicoes": {
+      "id": null,
+      "ativo": 1,
+      "personagem_id": null,
+      "abalado": 0,
+      "atordoado": 0,
+      "enfurecido": 0,
+      "envenenado": 0,
+      "fraco": 0,
+      "lento": 0
+    },
+    "classes": [],
+    "feiticos": [],
+    "equipamentos": [
+      {
+        "id": "offline-equip-1",
+        "ativo": 1,
+        "personagem_id": null,
+        "imagem_id": null,
+        "nome": "",
+        "descricao": "",
+        "tipo": "ARMADURA",
+        "imagem": null
+      },
+      {
+        "id": "offline-equip-2",
+        "ativo": 1,
+        "personagem_id": null,
+        "imagem_id": null,
+        "nome": "",
+        "descricao": "",
+        "tipo": "MAO_PRIMARIA",
+        "imagem": null
+      },
+      {
+        "id": "offline-equip-3",
+        "ativo": 1,
+        "personagem_id": null,
+        "imagem_id": null,
+        "nome": "",
+        "descricao": "",
+        "tipo": "MAO_SECUNDARIA",
+        "imagem": null
+      },
+      {
+        "id": "offline-equip-4",
+        "ativo": 1,
+        "personagem_id": null,
+        "imagem_id": null,
+        "nome": "",
+        "descricao": "",
+        "tipo": "ACESSORIO",
+        "imagem": null
+      }
+    ],
+    "itens": [],
+    "lacos": [],
+    "visuais": [],
+    "visualAtivo": null
+  }
+}

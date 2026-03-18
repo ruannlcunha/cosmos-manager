@@ -1,0 +1,120 @@
+
+.cena-screen {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../../../assets/img/backgrounds/UNIVERSO_OFFLINE.png);
+    background-size: 105%;
+    animation: leftToRight 45s infinite alternate;
+}
+
+.cena-screen .cena-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: solid 2px var(--black);
+}
+
+.gerenciar-cena-button {
+    position: absolute;
+    z-index: 999;
+    right: 2%;
+    top: 2%;
+    width: 20%;
+    height: 5%;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: solid 3px var(--dark-purple);
+    background-color: var(--purple);
+    transition: all 0.1s;
+}
+
+.gerenciar-cena-button:hover {
+    transition: all 0.1s;
+    background-color: var(--light-purple);
+}
+
+.gerenciar-cena-button h1 {
+    margin: 0;
+    color: var(--white);
+    text-shadow: var(--borda-texto);
+}
+
+.gerenciar-cena-button img {
+    height: 90%;
+}
+
+.modal .gerenciar-cena-modal {
+    width: 75%;
+    height: 95%;
+    border: solid 3px var(--dark-purple);
+    background-color: var(--purple-transparent);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal .gerenciar-cena-modal header {
+    width: 100%;
+    height: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-purple);
+}
+
+.modal .gerenciar-cena-modal header h1 {
+    color: var(--white);
+    font-weight: 500;
+    text-shadow: var(--borda-texto);
+    margin: 5px;
+    font-size: 2.5rem;
+}
+
+.modal .gerenciar-cena-modal section {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 1%;
+}
+
+.modal .gerenciar-cena-modal section table {
+    border: solid 3px var(--dark-purple);
+    border-collapse: collapse;
+    height: 5%;
+}
+
+.modal .gerenciar-cena-modal section table th {
+    background-color: var(--purple);
+    border-right: solid 3px var(--dark-purple);
+}
+
+.modal .gerenciar-cena-modal section table th h1 {
+    font-size: 1.5rem;
+    color: var(--white);
+    text-shadow: var(--borda-texto);
+    font-weight: 500;
+    margin: 5px 15px;
+}
+
+.modal .gerenciar-cena-modal section table td div {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+    padding: 5px 0;
+}
+
+.modal .gerenciar-cena-modal section table td div button {
+    font-size: 1.25rem;
+}
+
+.modal .gerenciar-cena-modal section table td div img {
+    height: 4vh;
+}
