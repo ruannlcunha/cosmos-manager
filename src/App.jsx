@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import { useSocket } from "./hook";
 import { GlobalDataOfflineProvider } from "./context/data-offline/global-data-offline.context";
 import { GlobalUserProvider } from "./context/user/global-user.context";
+import { BASE_API_URL, COR_TEMAS } from "./constants";
 
 function App() {
   const { socket } = useSocket();
@@ -13,6 +14,7 @@ function App() {
   document.documentElement.style.setProperty('--vh', `${vh}px`);
 
   useEffect(() => {
+    console.log(BASE_API_URL)
     socket.connect();
   }, []);
 

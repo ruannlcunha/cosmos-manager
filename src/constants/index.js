@@ -1,4 +1,5 @@
-export const BASE_API_URL = "http://54.226.182.196:8080/"
+export const BASE_API_URL = `http://${import.meta.env.VITE_API_HOST}:${import.meta.env.VITE_API_PORT}`;
+
 export const CAMPANHA_URL = `${BASE_API_URL}campanhas`
 export const RECEITA_URL = `${BASE_API_URL}receitas`
 export const PERSONAGEM_URL = `${BASE_API_URL}personagens`

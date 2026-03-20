@@ -15,6 +15,7 @@
   "dependencies": {
     "app": "file:",
     "axios": "^1.13.2",
+    "dotenv": "^17.3.1",
     "gifuct-js": "^2.1.2",
     "howler": "^2.2.4",
     "js-file-download": "^0.4.12",
