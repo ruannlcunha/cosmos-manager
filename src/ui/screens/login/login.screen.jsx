@@ -6,12 +6,18 @@ import useGlobalUser from "../../../context/user/global-user.context";
 import { useNavigate } from "react-router-dom";
 import { ICONS } from "../../../constants";
 import { useEffect } from "react";
+import { useVerificarConexao } from "../../../hook/api/_base/verificar-conexao.api";
 
 export function LoginScreen() {
     const { formData, setFormData, handleChange } = useForm({ usuario: "", senha: "" });
     const { realizarLogin } = useRealizarLogin()
     const navigate = useNavigate();
     const [user, setUser] = useGlobalUser();
+    const { verificarConexao } = useVerificarConexao()
+
+    useEffect(() => {
+        verificarConexao()
+    }, [])
 
     async function handleLogin(e) {
         e.preventDefault()
@@ -26,7 +32,7 @@ export function LoginScreen() {
 
     return (
         <ContainerScreen>
-            <BackButton navigateTo={"/"}/>
+            <BackButton navigateTo={"/"} />
             <div className="login-screen">
                 <Imagem data={ICONS.LOGO} />
                 <form onSubmit={handleLogin}>
