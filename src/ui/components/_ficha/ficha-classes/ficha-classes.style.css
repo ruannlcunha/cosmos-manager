@@ -84,6 +84,7 @@
     height: 2rem;
     background-color: var(--black-transparent);
     font-size: 1.25rem;
+    white-space: pre-wrap;
 }
 
 .ficha-classes-container .niveis-section {
