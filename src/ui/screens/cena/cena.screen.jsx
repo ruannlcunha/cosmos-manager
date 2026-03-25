@@ -8,12 +8,14 @@ import { useSocket } from "../../../hook"
 import useGlobalUser from "../../../context/user/global-user.context"
 import { useListarCenaObjetos } from "../../../hook/api/campanha/listar-cena-objetos.api"
 import { useAlterarCena } from "../../../hook/api/campanha/alterar-cena.api"
+import { useListarCenas } from "../../../hook/api/campanha/listar-cenas.api"
 
 export function CenaScreen() {
     const [zoom, setZoom] = useState(100)
     const [hudAtivo, setHudAtivo] = useState(true)
     const [permissaoCena, setPermissaoCena] = useState(false)
     const { campanhaId, cenaId } = useParams()
+    const { cenas, listarCenas } = useListarCenas()
     const { cena, visualizarCena } = useVisualizarCena()
     const { cenaObjetos, listarCenaObjetos } = useListarCenaObjetos()
     const { socket } = useSocket();
@@ -24,11 +26,9 @@ export function CenaScreen() {
     const [user] = useGlobalUser()
 
     useEffect(() => {
-        visualizarCena(campanhaId, cenaId);
-        listarCenaObjetos(campanhaId, cenaId);
+        fetchCena()
         socket.on("campanhas", async () => {
-            visualizarCena(campanhaId, cenaId)
-            listarCenaObjetos(campanhaId, cenaId);
+            fetchCena()
         });
 
     }, [campanhaId, cenaId]);
@@ -39,6 +39,12 @@ export function CenaScreen() {
         }
     }, [cena, user]);
 
+    async function fetchCena() {
+        await visualizarCena(campanhaId, cenaId);
+        await listarCenaObjetos(campanhaId, cenaId);
+        await listarCenas(campanhaId);
+    }
+
     function verificarPermissaoCena() {
         if (!cena.exibindo && user.role !== USER_ROLE.ADM) {
             navigate(`/campanha/${campanhaId}?menu=4`);
@@ -48,6 +54,10 @@ export function CenaScreen() {
     }
 
     async function handleExibirCena() {
+        const cenaExibida = cenas.find(_cena => _cena.exibindo)
+        if(cenaExibida) {
+            await alterarCena(campanhaId, cenaExibida.id, { exibindo: false })
+        }
         await alterarCena(campanhaId, cenaId, { exibindo: true })
     }
 
