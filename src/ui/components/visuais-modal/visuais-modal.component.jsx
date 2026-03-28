@@ -23,8 +23,9 @@ export function VisuaisModal({ personagem, setPersonagem, isOpen, setIsOpen, mod
     useEffect(() => {
         setFormData({ codigo: "" })
         if (personagem) {
+            const _visuais = user.role === USER_ROLE.ADM ? personagem.visuais : personagem.visuais.filter(vis => vis.visivel)
             setVisuais({
-                array: [...personagem.visuais.sort(function (a, b) {
+                array: [..._visuais.sort(function (a, b) {
                     return a.id - b.id;
                 })],
                 ativo: { ...personagem.visualAtivo },
