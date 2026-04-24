@@ -307,6 +307,9 @@
     color: var(--white);
     text-shadow: var(--borda-texto);
     font-weight: 500;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .ficha-grupo-container .ficha-menu .diario-menu .registros-list .diario-card .diario-direita section {

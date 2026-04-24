@@ -48,9 +48,12 @@ export function CenaLoja({ cena, cenaObjetos, hudAtivo }) {
         const _texto = cenaObjetos.find(obj => obj.tipo === CENA_OBJETOS_TIPO.TEXTO && obj.exibindo)
 
         const imagemObj = cenaObjetos.find(obj => obj.tipo === CENA_OBJETOS_TIPO.IMAGEM && obj.exibindo)
-        const _imagemData = await visualizarImagem(imagemObj.valor)
-        const _imagem = { ..._imagemData, ...imagemObj }
-
+        if(imagemObj) {
+            const _imagemData = await visualizarImagem(imagemObj.valor)
+            const _imagem = { ..._imagemData, ...imagemObj }
+            setImagem(_imagem)
+        }
+        
         const _itensData = await listarItens()
         const _itens = cenaObjetos
             .filter(obj => obj.tipo === CENA_OBJETOS_TIPO.ITEM && obj.exibindo)
@@ -59,9 +62,8 @@ export function CenaLoja({ cena, cenaObjetos, hudAtivo }) {
                 return { ...obj, ..._itemData }
             })
 
-        setTitulo(_titulo.valor)
-        setTexto(_texto.valor)
-        setImagem(_imagem)
+        setTitulo(_titulo ? _titulo.valor : "")
+        setTexto(_texto ? _texto.valor : "")
         setItens(_itens)
         await listarPersonagens(user.id)
     }

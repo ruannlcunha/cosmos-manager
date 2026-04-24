@@ -29,10 +29,13 @@ export function FichaGrupo({ campanha, setCampanha, modoOffline }) {
 
     useEffect(() => {
         if (diario) {
-            setDiarioFiltrado(diario.filter(_diario =>
-                (categorias.some(categoria => categoria === _diario.categoria) || !categorias.length) &&
-                _diario.nome.toLowerCase().includes(formData.filtroDiario.toLowerCase())
-            ))
+            setDiarioFiltrado(diario
+                .filter(_diario =>
+                    (categorias.some(categoria => categoria === _diario.categoria) || !categorias.length) &&
+                    _diario.nome.toLowerCase().includes(formData.filtroDiario.toLowerCase())
+                )
+                .sort(function (a, b) { return b.id - a.id; })
+            )
         }
     }, [diario, categorias, formData.filtroDiario])
 

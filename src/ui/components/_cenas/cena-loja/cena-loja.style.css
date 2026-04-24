@@ -144,6 +144,9 @@
     margin: 0;
     font-size: 1.5rem;
     font-weight: 500;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .cena-loja-container .hud-loja-container .menu-esquerda .item-card .item-direita section {
