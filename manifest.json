@@ -1,20 +1,20 @@
 {
     "theme_color": "#2596be",
     "background_color": "#ffffff",
-    "id": "http://13.216.73.250:3000/",
-    "start_url": "http://13.216.73.250:3000/",
+    "id": "https://15dpsfs9-3000.brs.devtunnels.ms/",
+    "start_url": "https://15dpsfs9-3000.brs.devtunnels.ms/",
     "name": "Cosmos Manager",
     "short_name": "Cosmos Manager",
     "prefer_related_applications": false,
     "icons": [
         {
-        "src": "http://13.216.73.250:3000/icon144.png",
+        "src": "https://15dpsfs9-3000.brs.devtunnels.ms/icon144.png",
         "sizes": "144x144",
         "type": "image/png",
         "purpose": "any maskable"
         },
         {
-        "src": "http://13.216.73.250:3000/icon512.png",
+        "src": "https://15dpsfs9-3000.brs.devtunnels.ms/icon512.png",
         "sizes": "512x512",
         "type": "image/png",
         "purpose": "any maskable"

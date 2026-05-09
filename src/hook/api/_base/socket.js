@@ -3,4 +3,7 @@ import { BASE_API_URL } from "../../../constants";
 
 export const socket = io(BASE_API_URL, {
     autoConnect: false,
+    extraHeaders: {
+    'ngrok-skip-browser-warning': 'true'
+    }
 });
